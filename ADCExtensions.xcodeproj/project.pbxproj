@@ -18,18 +18,6 @@
 		7109E6EE16D3964C006151CA /* NSSet+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6E716D32A5F006151CA /* NSSet+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		7109E6CB16D329B2006151CA /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		7109E6CD16D329B2006151CA /* libADCExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libADCExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7109E6D016D329B2006151CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -107,6 +95,20 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		7109E6EA16D39635006151CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7109E6EB16D39644006151CA /* NSArray+ADC.h in Headers */,
+				7109E6EC16D3964C006151CA /* NSDictionary+ADC.h in Headers */,
+				7109E6ED16D3964C006151CA /* NSObject+ADC.h in Headers */,
+				7109E6EE16D3964C006151CA /* NSSet+ADC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		7109E6CC16D329B2006151CA /* ADCExtensions */ = {
 			isa = PBXNativeTarget;
@@ -114,7 +116,7 @@
 			buildPhases = (
 				7109E6C916D329B2006151CA /* Sources */,
 				7109E6CA16D329B2006151CA /* Frameworks */,
-				7109E6CB16D329B2006151CA /* CopyFiles */,
+				7109E6EA16D39635006151CA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -226,7 +228,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ADCExtensions/ADCExtensions-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -238,7 +242,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ADCExtensions/ADCExtensions-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
