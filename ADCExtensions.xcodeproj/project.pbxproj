@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		7109E6D116D329B2006151CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7109E6D016D329B2006151CA /* Foundation.framework */; };
 		7109E6E016D329E8006151CA /* NSArray+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109E6DF16D329E8006151CA /* NSArray+ADC.m */; };
+		7109E6E316D32A02006151CA /* NSObject+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109E6E216D32A02006151CA /* NSObject+ADC.m */; };
 		7109E6E616D32A3B006151CA /* NSDictionary+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109E6E516D32A3B006151CA /* NSDictionary+ADC.m */; };
 		7109E6E916D32A5F006151CA /* NSSet+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109E6E816D32A5F006151CA /* NSSet+ADC.m */; };
 		7109E6EB16D39644006151CA /* NSArray+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6DE16D329E8006151CA /* NSArray+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7109E6EC16D3964C006151CA /* NSDictionary+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6E416D32A3B006151CA /* NSDictionary+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7109E6ED16D3964C006151CA /* NSObject+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6E116D32A02006151CA /* NSObject+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7109E6EE16D3964C006151CA /* NSSet+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6E716D32A5F006151CA /* NSSet+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		7109E6D416D329B2006151CA /* ADCExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADCExtensions-Prefix.pch"; sourceTree = "<group>"; };
 		7109E6DE16D329E8006151CA /* NSArray+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ADC.h"; sourceTree = "<group>"; };
 		7109E6DF16D329E8006151CA /* NSArray+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ADC.m"; sourceTree = "<group>"; };
+		7109E6E116D32A02006151CA /* NSObject+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ADC.h"; sourceTree = "<group>"; };
+		7109E6E216D32A02006151CA /* NSObject+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ADC.m"; sourceTree = "<group>"; };
 		7109E6E416D32A3B006151CA /* NSDictionary+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ADC.h"; sourceTree = "<group>"; };
 		7109E6E516D32A3B006151CA /* NSDictionary+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ADC.m"; sourceTree = "<group>"; };
 		7109E6E716D32A5F006151CA /* NSSet+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+ADC.h"; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				7109E6DF16D329E8006151CA /* NSArray+ADC.m */,
 				7109E6E416D32A3B006151CA /* NSDictionary+ADC.h */,
 				7109E6E516D32A3B006151CA /* NSDictionary+ADC.m */,
+				7109E6E116D32A02006151CA /* NSObject+ADC.h */,
+				7109E6E216D32A02006151CA /* NSObject+ADC.m */,
 				7109E6E716D32A5F006151CA /* NSSet+ADC.h */,
 				7109E6E816D32A5F006151CA /* NSSet+ADC.m */,
 				7109E6D316D329B2006151CA /* Supporting Files */,
@@ -151,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7109E6E016D329E8006151CA /* NSArray+ADC.m in Sources */,
+				7109E6E316D32A02006151CA /* NSObject+ADC.m in Sources */,
 				7109E6E616D32A3B006151CA /* NSDictionary+ADC.m in Sources */,
 				7109E6E916D32A5F006151CA /* NSSet+ADC.m in Sources */,
 			);
