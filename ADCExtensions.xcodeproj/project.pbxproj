@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7109E6D116D329B2006151CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7109E6D016D329B2006151CA /* Foundation.framework */; };
-		7109E6D616D329B2006151CA /* ADCExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7109E6D516D329B2006151CA /* ADCExtensions.h */; };
-		7109E6D816D329B2006151CA /* ADCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109E6D716D329B2006151CA /* ADCExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +17,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				7109E6D616D329B2006151CA /* ADCExtensions.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,8 +26,6 @@
 		7109E6CD16D329B2006151CA /* libADCExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libADCExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7109E6D016D329B2006151CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7109E6D416D329B2006151CA /* ADCExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADCExtensions-Prefix.pch"; sourceTree = "<group>"; };
-		7109E6D516D329B2006151CA /* ADCExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADCExtensions.h; sourceTree = "<group>"; };
-		7109E6D716D329B2006151CA /* ADCExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADCExtensions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +68,6 @@
 		7109E6D216D329B2006151CA /* ADCExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				7109E6D516D329B2006151CA /* ADCExtensions.h */,
-				7109E6D716D329B2006151CA /* ADCExtensions.m */,
 				7109E6D316D329B2006151CA /* Supporting Files */,
 			);
 			path = ADCExtensions;
@@ -139,7 +132,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7109E6D816D329B2006151CA /* ADCExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
