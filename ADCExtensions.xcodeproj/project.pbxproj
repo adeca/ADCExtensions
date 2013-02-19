@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7109E6D116D329B2006151CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7109E6D016D329B2006151CA /* Foundation.framework */; };
+		7109E6E016D329E8006151CA /* NSArray+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109E6DF16D329E8006151CA /* NSArray+ADC.m */; };
+		7109E6EB16D39644006151CA /* NSArray+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6DE16D329E8006151CA /* NSArray+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +28,8 @@
 		7109E6CD16D329B2006151CA /* libADCExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libADCExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7109E6D016D329B2006151CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7109E6D416D329B2006151CA /* ADCExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADCExtensions-Prefix.pch"; sourceTree = "<group>"; };
+		7109E6DE16D329E8006151CA /* NSArray+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ADC.h"; sourceTree = "<group>"; };
+		7109E6DF16D329E8006151CA /* NSArray+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ADC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 		7109E6D216D329B2006151CA /* ADCExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				7109E6DE16D329E8006151CA /* NSArray+ADC.h */,
+				7109E6DF16D329E8006151CA /* NSArray+ADC.m */,
 				7109E6D316D329B2006151CA /* Supporting Files */,
 			);
 			path = ADCExtensions;
@@ -132,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7109E6E016D329E8006151CA /* NSArray+ADC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
