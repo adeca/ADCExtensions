@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		7109E6D116D329B2006151CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7109E6D016D329B2006151CA /* Foundation.framework */; };
 		7109E6E016D329E8006151CA /* NSArray+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109E6DF16D329E8006151CA /* NSArray+ADC.m */; };
+		7109E6E616D32A3B006151CA /* NSDictionary+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109E6E516D32A3B006151CA /* NSDictionary+ADC.m */; };
 		7109E6EB16D39644006151CA /* NSArray+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6DE16D329E8006151CA /* NSArray+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7109E6EC16D3964C006151CA /* NSDictionary+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6E416D32A3B006151CA /* NSDictionary+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,8 @@
 		7109E6D416D329B2006151CA /* ADCExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADCExtensions-Prefix.pch"; sourceTree = "<group>"; };
 		7109E6DE16D329E8006151CA /* NSArray+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ADC.h"; sourceTree = "<group>"; };
 		7109E6DF16D329E8006151CA /* NSArray+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ADC.m"; sourceTree = "<group>"; };
+		7109E6E416D32A3B006151CA /* NSDictionary+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ADC.h"; sourceTree = "<group>"; };
+		7109E6E516D32A3B006151CA /* NSDictionary+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ADC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			children = (
 				7109E6DE16D329E8006151CA /* NSArray+ADC.h */,
 				7109E6DF16D329E8006151CA /* NSArray+ADC.m */,
+				7109E6E416D32A3B006151CA /* NSDictionary+ADC.h */,
+				7109E6E516D32A3B006151CA /* NSDictionary+ADC.m */,
 				7109E6D316D329B2006151CA /* Supporting Files */,
 			);
 			path = ADCExtensions;
@@ -139,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7109E6E016D329E8006151CA /* NSArray+ADC.m in Sources */,
+				7109E6E616D32A3B006151CA /* NSDictionary+ADC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
