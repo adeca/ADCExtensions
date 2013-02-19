@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7109E6D116D329B2006151CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7109E6D016D329B2006151CA /* Foundation.framework */; };
+		7109E6D616D329B2006151CA /* ADCExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7109E6D516D329B2006151CA /* ADCExtensions.h */; };
+		7109E6D816D329B2006151CA /* ADCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109E6D716D329B2006151CA /* ADCExtensions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7109E6CB16D329B2006151CA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				7109E6D616D329B2006151CA /* ADCExtensions.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7109E6CD16D329B2006151CA /* libADCExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libADCExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7109E6D016D329B2006151CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7109E6D416D329B2006151CA /* ADCExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADCExtensions-Prefix.pch"; sourceTree = "<group>"; };
+		7109E6D516D329B2006151CA /* ADCExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADCExtensions.h; sourceTree = "<group>"; };
+		7109E6D716D329B2006151CA /* ADCExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADCExtensions.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7109E6CA16D329B2006151CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7109E6D116D329B2006151CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7109E6C416D329B2006151CA = {
+			isa = PBXGroup;
+			children = (
+				7109E6D216D329B2006151CA /* ADCExtensions */,
+				7109E6CF16D329B2006151CA /* Frameworks */,
+				7109E6CE16D329B2006151CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7109E6CE16D329B2006151CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7109E6CD16D329B2006151CA /* libADCExtensions.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7109E6CF16D329B2006151CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7109E6D016D329B2006151CA /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7109E6D216D329B2006151CA /* ADCExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				7109E6D516D329B2006151CA /* ADCExtensions.h */,
+				7109E6D716D329B2006151CA /* ADCExtensions.m */,
+				7109E6D316D329B2006151CA /* Supporting Files */,
+			);
+			path = ADCExtensions;
+			sourceTree = "<group>";
+		};
+		7109E6D316D329B2006151CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7109E6D416D329B2006151CA /* ADCExtensions-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7109E6CC16D329B2006151CA /* ADCExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7109E6DB16D329B2006151CA /* Build configuration list for PBXNativeTarget "ADCExtensions" */;
+			buildPhases = (
+				7109E6C916D329B2006151CA /* Sources */,
+				7109E6CA16D329B2006151CA /* Frameworks */,
+				7109E6CB16D329B2006151CA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADCExtensions;
+			productName = ADCExtensions;
+			productReference = 7109E6CD16D329B2006151CA /* libADCExtensions.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7109E6C516D329B2006151CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Agustín de Cabrera";
+			};
+			buildConfigurationList = 7109E6C816D329B2006151CA /* Build configuration list for PBXProject "ADCExtensions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7109E6C416D329B2006151CA;
+			productRefGroup = 7109E6CE16D329B2006151CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7109E6CC16D329B2006151CA /* ADCExtensions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7109E6C916D329B2006151CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7109E6D816D329B2006151CA /* ADCExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7109E6D916D329B2006151CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7109E6DA16D329B2006151CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7109E6DC16D329B2006151CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ADCExtensions.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADCExtensions/ADCExtensions-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7109E6DD16D329B2006151CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ADCExtensions.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADCExtensions/ADCExtensions-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7109E6C816D329B2006151CA /* Build configuration list for PBXProject "ADCExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7109E6D916D329B2006151CA /* Debug */,
+				7109E6DA16D329B2006151CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7109E6DB16D329B2006151CA /* Build configuration list for PBXNativeTarget "ADCExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7109E6DC16D329B2006151CA /* Debug */,
+				7109E6DD16D329B2006151CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7109E6C516D329B2006151CA /* Project object */;
+}

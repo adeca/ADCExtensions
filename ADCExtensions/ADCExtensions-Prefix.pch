@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ADCExtensions' target in the 'ADCExtensions' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
