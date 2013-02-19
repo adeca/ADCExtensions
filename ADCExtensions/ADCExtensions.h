@@ -13,6 +13,7 @@
 #import "NSNumber+ADC.h"
 #import "NSObject+ADC.h"
 #import "NSSet+ADC.h"
+#import "NSString+ADC.h"
 
 #import "UIView+ADC.h"
 
