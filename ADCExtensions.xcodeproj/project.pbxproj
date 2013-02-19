@@ -21,6 +21,8 @@
 		7109E6F416D3AD00006151CA /* UIView+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109E6F216D3AD00006151CA /* UIView+ADC.m */; };
 		7109E6F716D3AF73006151CA /* math+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6F516D3AF73006151CA /* math+ADC.h */; };
 		7109E6F816D3AF73006151CA /* math+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109E6F616D3AF73006151CA /* math+ADC.m */; };
+		7109E6FB16D3B041006151CA /* NSNumber+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6F916D3B041006151CA /* NSNumber+ADC.h */; };
+		7109E6FC16D3B041006151CA /* NSNumber+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109E6FA16D3B041006151CA /* NSNumber+ADC.m */; };
 		7109E6FF16D3B070006151CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7109E6FD16D3B05B006151CA /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		7109E6F216D3AD00006151CA /* UIView+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ADC.m"; sourceTree = "<group>"; };
 		7109E6F516D3AF73006151CA /* math+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "math+ADC.h"; sourceTree = "<group>"; };
 		7109E6F616D3AF73006151CA /* math+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "math+ADC.m"; sourceTree = "<group>"; };
+		7109E6F916D3B041006151CA /* NSNumber+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ADC.h"; sourceTree = "<group>"; };
+		7109E6FA16D3B041006151CA /* NSNumber+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ADC.m"; sourceTree = "<group>"; };
 		7109E6FD16D3B05B006151CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -94,6 +98,8 @@
 				7109E6DF16D329E8006151CA /* NSArray+ADC.m */,
 				7109E6E416D32A3B006151CA /* NSDictionary+ADC.h */,
 				7109E6E516D32A3B006151CA /* NSDictionary+ADC.m */,
+				7109E6F916D3B041006151CA /* NSNumber+ADC.h */,
+				7109E6FA16D3B041006151CA /* NSNumber+ADC.m */,
 				7109E6E116D32A02006151CA /* NSObject+ADC.h */,
 				7109E6E216D32A02006151CA /* NSObject+ADC.m */,
 				7109E6E716D32A5F006151CA /* NSSet+ADC.h */,
@@ -127,6 +133,7 @@
 				7109E6F016D3AC76006151CA /* ADCExtensions.h in Headers */,
 				7109E6F316D3AD00006151CA /* UIView+ADC.h in Headers */,
 				7109E6F716D3AF73006151CA /* math+ADC.h in Headers */,
+				7109E6FB16D3B041006151CA /* NSNumber+ADC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +194,7 @@
 				7109E6E916D32A5F006151CA /* NSSet+ADC.m in Sources */,
 				7109E6F416D3AD00006151CA /* UIView+ADC.m in Sources */,
 				7109E6F816D3AF73006151CA /* math+ADC.m in Sources */,
+				7109E6FC16D3B041006151CA /* NSNumber+ADC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

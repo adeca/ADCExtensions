@@ -10,6 +10,7 @@
 
 #import "NSArray+ADC.h"
 #import "NSDictionary+ADC.h"
+#import "NSNumber+ADC.h"
 #import "NSObject+ADC.h"
 #import "NSSet+ADC.h"
 
