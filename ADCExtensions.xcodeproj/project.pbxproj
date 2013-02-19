@@ -16,6 +16,7 @@
 		7109E6EC16D3964C006151CA /* NSDictionary+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6E416D32A3B006151CA /* NSDictionary+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7109E6ED16D3964C006151CA /* NSObject+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6E116D32A02006151CA /* NSObject+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7109E6EE16D3964C006151CA /* NSSet+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6E716D32A5F006151CA /* NSSet+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7109E6F016D3AC76006151CA /* ADCExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6EF16D3AC71006151CA /* ADCExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7109E6E516D32A3B006151CA /* NSDictionary+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ADC.m"; sourceTree = "<group>"; };
 		7109E6E716D32A5F006151CA /* NSSet+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+ADC.h"; sourceTree = "<group>"; };
 		7109E6E816D32A5F006151CA /* NSSet+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+ADC.m"; sourceTree = "<group>"; };
+		7109E6EF16D3AC71006151CA /* ADCExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADCExtensions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		7109E6D216D329B2006151CA /* ADCExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				7109E6EF16D3AC71006151CA /* ADCExtensions.h */,
 				7109E6DE16D329E8006151CA /* NSArray+ADC.h */,
 				7109E6DF16D329E8006151CA /* NSArray+ADC.m */,
 				7109E6E416D32A3B006151CA /* NSDictionary+ADC.h */,
@@ -104,6 +107,7 @@
 				7109E6EC16D3964C006151CA /* NSDictionary+ADC.h in Headers */,
 				7109E6ED16D3964C006151CA /* NSObject+ADC.h in Headers */,
 				7109E6EE16D3964C006151CA /* NSSet+ADC.h in Headers */,
+				7109E6F016D3AC76006151CA /* ADCExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +272,7 @@
 				7109E6DD16D329B2006151CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
