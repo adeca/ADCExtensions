@@ -10,4 +10,5 @@
 #import "NSDictionary+ADC.h"
 #import "NSObject+ADC.h"
 #import "NSSet+ADC.h"
+#import "UIView+ADC.h"
 

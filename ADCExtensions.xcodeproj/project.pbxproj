@@ -17,6 +17,9 @@
 		7109E6ED16D3964C006151CA /* NSObject+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6E116D32A02006151CA /* NSObject+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7109E6EE16D3964C006151CA /* NSSet+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6E716D32A5F006151CA /* NSSet+ADC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7109E6F016D3AC76006151CA /* ADCExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6EF16D3AC71006151CA /* ADCExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7109E6F316D3AD00006151CA /* UIView+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7109E6F116D3AD00006151CA /* UIView+ADC.h */; };
+		7109E6F416D3AD00006151CA /* UIView+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109E6F216D3AD00006151CA /* UIView+ADC.m */; };
+		7109E6FF16D3B070006151CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7109E6FD16D3B05B006151CA /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		7109E6E716D32A5F006151CA /* NSSet+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+ADC.h"; sourceTree = "<group>"; };
 		7109E6E816D32A5F006151CA /* NSSet+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+ADC.m"; sourceTree = "<group>"; };
 		7109E6EF16D3AC71006151CA /* ADCExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADCExtensions.h; sourceTree = "<group>"; };
+		7109E6F116D3AD00006151CA /* UIView+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ADC.h"; sourceTree = "<group>"; };
+		7109E6F216D3AD00006151CA /* UIView+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ADC.m"; sourceTree = "<group>"; };
+		7109E6FD16D3B05B006151CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7109E6D116D329B2006151CA /* Foundation.framework in Frameworks */,
+				7109E6FF16D3B070006151CA /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				7109E6D216D329B2006151CA /* ADCExtensions */,
+				7109E6D316D329B2006151CA /* Supporting Files */,
 				7109E6CF16D329B2006151CA /* Frameworks */,
 				7109E6CE16D329B2006151CA /* Products */,
 			);
@@ -67,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				7109E6D016D329B2006151CA /* Foundation.framework */,
+				7109E6FD16D3B05B006151CA /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,7 +92,8 @@
 				7109E6E216D32A02006151CA /* NSObject+ADC.m */,
 				7109E6E716D32A5F006151CA /* NSSet+ADC.h */,
 				7109E6E816D32A5F006151CA /* NSSet+ADC.m */,
-				7109E6D316D329B2006151CA /* Supporting Files */,
+				7109E6F116D3AD00006151CA /* UIView+ADC.h */,
+				7109E6F216D3AD00006151CA /* UIView+ADC.m */,
 			);
 			path = ADCExtensions;
 			sourceTree = "<group>";
@@ -94,6 +104,7 @@
 				7109E6D416D329B2006151CA /* ADCExtensions-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = ADCExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +119,7 @@
 				7109E6ED16D3964C006151CA /* NSObject+ADC.h in Headers */,
 				7109E6EE16D3964C006151CA /* NSSet+ADC.h in Headers */,
 				7109E6F016D3AC76006151CA /* ADCExtensions.h in Headers */,
+				7109E6F316D3AD00006151CA /* UIView+ADC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +178,7 @@
 				7109E6E316D32A02006151CA /* NSObject+ADC.m in Sources */,
 				7109E6E616D32A3B006151CA /* NSDictionary+ADC.m in Sources */,
 				7109E6E916D32A5F006151CA /* NSSet+ADC.m in Sources */,
+				7109E6F416D3AD00006151CA /* UIView+ADC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
