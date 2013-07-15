@@ -19,6 +19,11 @@
  */
 - (NSArray *)objectsForKeys:(NSArray *)keys;
 
+/*!
+ Returns a copy of the dictionary with all keys and values that are NSNull instances recursively removed.
+ */
+- (NSDictionary *)dictionaryByRemovingNulls;
+
 @end
 
 

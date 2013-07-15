@@ -10,6 +10,11 @@
 
 @interface NSSet (ADC)
 
+/*!
+ Returns a copy of the set with all keys and values that are NSNull instances recursively removed.
+ */
+- (NSSet *)setByRemovingNulls;
+
 @end
 
 

@@ -7,6 +7,9 @@
 //
 
 #import "NSArray+ADC.h"
+#import "NSArray+Functional.h"
+#import "NSDictionary+ADC.h"
+#import "NSSet+ADC.h"
 
 @implementation NSArray (ADC)
 
@@ -16,6 +19,24 @@
 }
 
 #pragma mark -
+
+- (NSArray*)arrayByRemovingNulls
+{
+    return [self map:^id(id obj) {
+
+        if (obj == [NSNull null])
+            return nil;
+        
+        if ([obj respondsToSelector:@selector(dictionaryByRemovingNulls)])
+            return [obj dictionaryByRemovingNulls];
+        else if ([obj respondsToSelector:@selector(arrayByRemovingNulls)])
+            return [obj arrayByRemovingNulls];
+        else if ([obj respondsToSelector:@selector(setByRemovingNulls)])
+            return [obj setByRemovingNulls];
+        
+        return obj;
+    }];
+}
 
 - (NSArray*)arrayByRemovingObject:(id)object
 {

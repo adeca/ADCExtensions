@@ -16,6 +16,11 @@
 - (id)firstObject;
 
 /*!
+ Returns a copy of the array with all objects that are NSNull instances removed.
+ */
+- (NSArray*)arrayByRemovingNulls;
+
+/*!
  Returns a new array that is a copy of the receiving array with the given object removed.
  */
 - (NSArray*)arrayByRemovingObject:(id)object;
