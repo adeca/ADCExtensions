@@ -69,4 +69,11 @@
 -(CGFloat)frameMaxX     { return CGRectGetMaxX(self.frame); }
 -(CGFloat)frameMaxY     { return CGRectGetMaxY(self.frame); }
 
+#pragma mark -
+
+- (void)removeSubviews
+{
+    [[self subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
+}
+
 @end

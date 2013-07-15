@@ -30,4 +30,9 @@
 @property (nonatomic, readonly) CGFloat frameMaxX;  // CGRectGetMaxX(frame)
 @property (nonatomic, readonly) CGFloat frameMaxY;  // CGRectGetMaxY(frame)
 
+/*!
+ Removes all of the receiver's current subviews.
+ */
+- (void)removeSubviews;
+
 @end
