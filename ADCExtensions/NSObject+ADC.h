@@ -10,11 +10,6 @@
 
 @interface NSObject (ADC)
 
-/*! 
- Returns self if the object is of the specified class (or any subclass of it), nil otherwise.
- */
-- (id)asObjectOfClass:(Class)aClass;
-
 /*!
  Invokes a block on the current thread.
  */
@@ -32,3 +27,4 @@
 - (void)cancelPreviousPerformRequests;
 
 @end
+

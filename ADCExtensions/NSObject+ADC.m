@@ -10,11 +10,6 @@
 
 @implementation NSObject (ADC)
 
-- (id)asObjectOfClass:(Class)aClass
-{
-    return [self isKindOfClass:aClass] ? self : nil;
-}
-
 - (void)performBlock:(void(^)())block
 {
     if (block)
