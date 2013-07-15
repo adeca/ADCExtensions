@@ -37,4 +37,17 @@
     }];
 }
 
+- (NSDictionary *)mapKeys:(id<NSCopying>(^)(id key, id obj))block
+{
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:[self count]];
+    
+    [self each:^(id key, id obj) {
+        id newkey = block(key, obj);
+        if (newkey)
+            dict[newkey] = obj;
+    }];
+    
+    return dict;
+}
+
 @end

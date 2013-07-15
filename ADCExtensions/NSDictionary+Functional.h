@@ -22,6 +22,12 @@
 - (NSDictionary *)map:(id (^)(id key, id obj))block;
 
 /*!
+ Invokes block once for each key/value pair in self, returning a new dictionary
+ where the key for each value is replaced by the result of the block invocation.
+ */
+- (NSDictionary *)mapKeys:(id<NSCopying>(^)(id key, id obj))block;
+
+/*!
  Invokes block once for each key/object pair in self, returning a dictionary containing those
  elements for which the block returns a true value.
  */
@@ -36,6 +42,12 @@
  where the value for each key is replaced by the result of the block invocation.
  */
 - (NSMutableDictionary *)map:(id (^)(id key, id obj))block;
+
+/*!
+ Invokes block once for each key/value pair in self, returning a new dictionary
+ where the key for each value is replaced by the result of the block invocation.
+ */
+- (NSMutableDictionary *)mapKeys:(id<NSCopying>(^)(id key, id obj))block;
 
 /*!
  Invokes block once for each key/object pair in self, returning a dictionary containing those
