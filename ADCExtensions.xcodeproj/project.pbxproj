@@ -35,6 +35,8 @@
 		7185AD6B17938BC400A12973 /* NSSet+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185AD6917938BC400A12973 /* NSSet+Functional.m */; };
 		7185AD6E179398B600A12973 /* NSSet+Sorting.h in Headers */ = {isa = PBXBuildFile; fileRef = 7185AD6C179398B600A12973 /* NSSet+Sorting.h */; };
 		7185AD6F179398B600A12973 /* NSSet+Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185AD6D179398B600A12973 /* NSSet+Sorting.m */; };
+		7185AD7217939A4100A12973 /* NSArray+Sorting.h in Headers */ = {isa = PBXBuildFile; fileRef = 7185AD7017939A4100A12973 /* NSArray+Sorting.h */; };
+		7185AD7317939A4100A12973 /* NSArray+Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185AD7117939A4100A12973 /* NSArray+Sorting.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		7185AD6917938BC400A12973 /* NSSet+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Functional.m"; sourceTree = "<group>"; };
 		7185AD6C179398B600A12973 /* NSSet+Sorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+Sorting.h"; sourceTree = "<group>"; };
 		7185AD6D179398B600A12973 /* NSSet+Sorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Sorting.m"; sourceTree = "<group>"; };
+		7185AD7017939A4100A12973 /* NSArray+Sorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sorting.h"; sourceTree = "<group>"; };
+		7185AD7117939A4100A12973 /* NSArray+Sorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sorting.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 				7109E6DF16D329E8006151CA /* NSArray+ADC.m */,
 				7185AD5C17938A2B00A12973 /* NSArray+Functional.h */,
 				7185AD5D17938A2B00A12973 /* NSArray+Functional.m */,
+				7185AD7017939A4100A12973 /* NSArray+Sorting.h */,
+				7185AD7117939A4100A12973 /* NSArray+Sorting.m */,
 				7185AD5F17938ACA00A12973 /* NSArray+Creation.h */,
 				7185AD6017938ACA00A12973 /* NSArray+Creation.m */,
 				7109E6E416D32A3B006151CA /* NSDictionary+ADC.h */,
@@ -171,6 +177,7 @@
 			files = (
 				7185AD6E179398B600A12973 /* NSSet+Sorting.h in Headers */,
 				7109E6EB16D39644006151CA /* NSArray+ADC.h in Headers */,
+				7185AD7217939A4100A12973 /* NSArray+Sorting.h in Headers */,
 				7109E6EC16D3964C006151CA /* NSDictionary+ADC.h in Headers */,
 				7185AD6117938ACA00A12973 /* NSArray+Creation.h in Headers */,
 				7109E6ED16D3964C006151CA /* NSObject+ADC.h in Headers */,
@@ -249,6 +256,7 @@
 				7109E6FC16D3B041006151CA /* NSNumber+ADC.m in Sources */,
 				710E392916D3B29800AA1F48 /* NSString+ADC.m in Sources */,
 				7185AD6617938B3F00A12973 /* NSDictionary+Functional.m in Sources */,
+				7185AD7317939A4100A12973 /* NSArray+Sorting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
