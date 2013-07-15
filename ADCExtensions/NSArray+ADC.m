@@ -10,10 +10,24 @@
 
 @implementation NSArray (ADC)
 
+- (id)firstObject
+{
+    return self.count > 0? self[0] : nil;
+}
+
+#pragma mark -
+
 - (NSArray*)arrayByRemovingObject:(id)object
 {
     NSMutableArray *copy = [self mutableCopy];
     [copy removeObject:object];
+    return [NSArray arrayWithArray:copy];
+}
+
+- (NSArray*)arrayByRemovingObjectsInArray:(NSArray*)otherArray
+{
+    NSMutableArray *copy = [self mutableCopy];
+    [copy removeObjectsInArray:otherArray];
     return [NSArray arrayWithArray:copy];
 }
 
@@ -28,6 +42,21 @@
 {
     return [self subarrayWithRange:(NSRange){
         0, MIN(count, self.count)
+    }];
+}
+
+- (NSArray*)subarrayToIndex:(NSUInteger)idx
+{
+    return [self subarrayWithCount:idx+1];
+}
+
+- (NSArray*)subarrayFromIndex:(NSUInteger)idx
+{
+    if (idx == NSNotFound || idx > self.count-1)
+        return @[];
+    
+    return [self subarrayWithRange:(NSRange){
+        idx, self.count-idx
     }];
 }
 

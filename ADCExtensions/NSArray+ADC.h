@@ -11,9 +11,19 @@
 @interface NSArray (ADC)
 
 /*!
+ Returns the first object in the array. If the array is empty, returns nil.
+ */
+- (id)firstObject;
+
+/*!
  Returns a new array that is a copy of the receiving array with the given object removed.
  */
 - (NSArray*)arrayByRemovingObject:(id)object;
+
+/*!
+ Returns a new array that is a copy of the receiving array with the given object removed.
+ */
+- (NSArray*)arrayByRemovingObjectsInArray:(NSArray*)otherArray;
 
 /*! 
  Returns a new array that is a copy of the receiving array with the given object inserted.
@@ -24,6 +34,16 @@
  Returns a new array containing the receiving array’s elements up to a specified count.
  */
 - (NSArray*)subarrayWithCount:(NSUInteger)count;
+
+/*!
+ Returns a new array containing the receiving array’s elements up to a specified index.
+ */
+- (NSArray*)subarrayToIndex:(NSUInteger)idx;
+
+/*!
+ Returns a new array containing the receiving array’s elements starting from a specified index.
+ */
+- (NSArray*)subarrayFromIndex:(NSUInteger)idx;
 
 @end
 
