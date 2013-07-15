@@ -26,6 +26,13 @@
 		7109E6FF16D3B070006151CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7109E6FD16D3B05B006151CA /* UIKit.framework */; };
 		710E392816D3B29800AA1F48 /* NSString+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 710E392616D3B29800AA1F48 /* NSString+ADC.h */; };
 		710E392916D3B29800AA1F48 /* NSString+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 710E392716D3B29800AA1F48 /* NSString+ADC.m */; };
+		7185AD5E17938A3100A12973 /* NSArray+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185AD5D17938A2B00A12973 /* NSArray+Functional.m */; };
+		7185AD6117938ACA00A12973 /* NSArray+Creation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7185AD5F17938ACA00A12973 /* NSArray+Creation.h */; };
+		7185AD6217938ACA00A12973 /* NSArray+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185AD6017938ACA00A12973 /* NSArray+Creation.m */; };
+		7185AD6517938B3F00A12973 /* NSDictionary+Functional.h in Headers */ = {isa = PBXBuildFile; fileRef = 7185AD6317938B3F00A12973 /* NSDictionary+Functional.h */; };
+		7185AD6617938B3F00A12973 /* NSDictionary+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185AD6417938B3F00A12973 /* NSDictionary+Functional.m */; };
+		7185AD6A17938BC400A12973 /* NSSet+Functional.h in Headers */ = {isa = PBXBuildFile; fileRef = 7185AD6817938BC400A12973 /* NSSet+Functional.h */; };
+		7185AD6B17938BC400A12973 /* NSSet+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185AD6917938BC400A12973 /* NSSet+Functional.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +57,14 @@
 		7109E6FD16D3B05B006151CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		710E392616D3B29800AA1F48 /* NSString+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ADC.h"; sourceTree = "<group>"; };
 		710E392716D3B29800AA1F48 /* NSString+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ADC.m"; sourceTree = "<group>"; };
+		7185AD5C17938A2B00A12973 /* NSArray+Functional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Functional.h"; sourceTree = "<group>"; };
+		7185AD5D17938A2B00A12973 /* NSArray+Functional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Functional.m"; sourceTree = "<group>"; };
+		7185AD5F17938ACA00A12973 /* NSArray+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Creation.h"; sourceTree = "<group>"; };
+		7185AD6017938ACA00A12973 /* NSArray+Creation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Creation.m"; sourceTree = "<group>"; };
+		7185AD6317938B3F00A12973 /* NSDictionary+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Functional.h"; sourceTree = "<group>"; };
+		7185AD6417938B3F00A12973 /* NSDictionary+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Functional.m"; sourceTree = "<group>"; };
+		7185AD6817938BC400A12973 /* NSSet+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+Functional.h"; sourceTree = "<group>"; };
+		7185AD6917938BC400A12973 /* NSSet+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Functional.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,20 +113,15 @@
 				7109E6EF16D3AC71006151CA /* ADCExtensions.h */,
 				7109E6F516D3AF73006151CA /* math+ADC.h */,
 				7109E6F616D3AF73006151CA /* math+ADC.m */,
-				7109E6DE16D329E8006151CA /* NSArray+ADC.h */,
-				7109E6DF16D329E8006151CA /* NSArray+ADC.m */,
-				7109E6E416D32A3B006151CA /* NSDictionary+ADC.h */,
-				7109E6E516D32A3B006151CA /* NSDictionary+ADC.m */,
 				7109E6F916D3B041006151CA /* NSNumber+ADC.h */,
 				7109E6FA16D3B041006151CA /* NSNumber+ADC.m */,
 				7109E6E116D32A02006151CA /* NSObject+ADC.h */,
 				7109E6E216D32A02006151CA /* NSObject+ADC.m */,
-				7109E6E716D32A5F006151CA /* NSSet+ADC.h */,
-				7109E6E816D32A5F006151CA /* NSSet+ADC.m */,
 				710E392616D3B29800AA1F48 /* NSString+ADC.h */,
 				710E392716D3B29800AA1F48 /* NSString+ADC.m */,
 				7109E6F116D3AD00006151CA /* UIView+ADC.h */,
 				7109E6F216D3AD00006151CA /* UIView+ADC.m */,
+				7185AD6717938B9E00A12973 /* Collections */,
 			);
 			path = ADCExtensions;
 			sourceTree = "<group>";
@@ -125,6 +135,27 @@
 			path = ADCExtensions;
 			sourceTree = "<group>";
 		};
+		7185AD6717938B9E00A12973 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				7109E6DE16D329E8006151CA /* NSArray+ADC.h */,
+				7109E6DF16D329E8006151CA /* NSArray+ADC.m */,
+				7185AD5C17938A2B00A12973 /* NSArray+Functional.h */,
+				7185AD5D17938A2B00A12973 /* NSArray+Functional.m */,
+				7185AD5F17938ACA00A12973 /* NSArray+Creation.h */,
+				7185AD6017938ACA00A12973 /* NSArray+Creation.m */,
+				7109E6E416D32A3B006151CA /* NSDictionary+ADC.h */,
+				7109E6E516D32A3B006151CA /* NSDictionary+ADC.m */,
+				7185AD6317938B3F00A12973 /* NSDictionary+Functional.h */,
+				7185AD6417938B3F00A12973 /* NSDictionary+Functional.m */,
+				7109E6E716D32A5F006151CA /* NSSet+ADC.h */,
+				7109E6E816D32A5F006151CA /* NSSet+ADC.m */,
+				7185AD6817938BC400A12973 /* NSSet+Functional.h */,
+				7185AD6917938BC400A12973 /* NSSet+Functional.m */,
+			);
+			name = Collections;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -134,6 +165,7 @@
 			files = (
 				7109E6EB16D39644006151CA /* NSArray+ADC.h in Headers */,
 				7109E6EC16D3964C006151CA /* NSDictionary+ADC.h in Headers */,
+				7185AD6117938ACA00A12973 /* NSArray+Creation.h in Headers */,
 				7109E6ED16D3964C006151CA /* NSObject+ADC.h in Headers */,
 				7109E6EE16D3964C006151CA /* NSSet+ADC.h in Headers */,
 				7109E6F016D3AC76006151CA /* ADCExtensions.h in Headers */,
@@ -141,6 +173,8 @@
 				7109E6F716D3AF73006151CA /* math+ADC.h in Headers */,
 				7109E6FB16D3B041006151CA /* NSNumber+ADC.h in Headers */,
 				710E392816D3B29800AA1F48 /* NSString+ADC.h in Headers */,
+				7185AD6517938B3F00A12973 /* NSDictionary+Functional.h in Headers */,
+				7185AD6A17938BC400A12973 /* NSSet+Functional.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +229,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7185AD6B17938BC400A12973 /* NSSet+Functional.m in Sources */,
 				7109E6E016D329E8006151CA /* NSArray+ADC.m in Sources */,
 				7109E6E316D32A02006151CA /* NSObject+ADC.m in Sources */,
 				7109E6E616D32A3B006151CA /* NSDictionary+ADC.m in Sources */,
 				7109E6E916D32A5F006151CA /* NSSet+ADC.m in Sources */,
 				7109E6F416D3AD00006151CA /* UIView+ADC.m in Sources */,
+				7185AD5E17938A3100A12973 /* NSArray+Functional.m in Sources */,
 				7109E6F816D3AF73006151CA /* math+ADC.m in Sources */,
+				7185AD6217938ACA00A12973 /* NSArray+Creation.m in Sources */,
 				7109E6FC16D3B041006151CA /* NSNumber+ADC.m in Sources */,
 				710E392916D3B29800AA1F48 /* NSString+ADC.m in Sources */,
+				7185AD6617938B3F00A12973 /* NSDictionary+Functional.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
