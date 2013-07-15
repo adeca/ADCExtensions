@@ -8,17 +8,6 @@
 
 #import "NSArray+Functional.h"
 
-static NSMutableArray *ArrayByEnumerating(NSUInteger count, id<NSFastEnumeration> enumerator, id(^block)(id))
-{
-    NSMutableArray *array = [NSMutableArray arrayWithCapacity:count];
-    for (id obj in enumerator) {
-        id newobj = block? block(obj) : obj;
-        if (newobj)
-            [array addObject:newobj];
-    }
-    return array;
-}
-
 @implementation NSArray (Functional)
 
 - (void)each:(void (^)(id obj))block
@@ -28,9 +17,28 @@ static NSMutableArray *ArrayByEnumerating(NSUInteger count, id<NSFastEnumeration
     }
 }
 
+- (NSArray *)mapWithOptions:(NSEnumerationOptions)options usingBlock:(id (^)(id obj, NSUInteger idx))block
+{
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:[self count]];
+    [self enumerateObjectsWithOptions:options usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        
+        id newobj = block(obj, idx);
+        if (newobj)
+            [array addObject:newobj];
+    }];
+    return array;
+}
+
 - (NSArray *)map:(id (^)(id obj))block
 {
-    return ArrayByEnumerating([self count], self, block);
+    return [self mapWithOptions:0 usingBlock:^id(id obj, NSUInteger idx) {
+        return block(obj);
+    }];
+}
+
+- (NSArray *)mapIndexes:(id (^)(id obj, NSUInteger idx))block
+{
+    return [self mapWithOptions:0 usingBlock:block];
 }
 
 - (NSArray *)select:(BOOL (^)(id obj))block
@@ -79,6 +87,51 @@ static NSMutableArray *ArrayByEnumerating(NSUInteger count, id<NSFastEnumeration
     for (uint i=0; i < count; i++) {
         block(self[i], array[i]);
     }
+}
+
+- (NSArray*)mapWith:(NSArray*)other each:(id (^)(id obj1, id obj2))block
+{
+    if (!block)
+        return nil;
+    
+    NSUInteger count = MIN([self count], [other count]);
+    
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:count];
+    for (uint i=0; i < count; i++) {
+        
+        id newobj = block(self[i], other[i]);
+        if (newobj)
+            [array addObject:newobj];
+    }
+    return array;
+}
+
+- (NSArray *)intersect:(NSArray*)array
+{
+    return [self select:^BOOL(id obj) {
+        return [array containsObject:obj];
+    }];
+}
+
+- (NSArray *)reversed
+{
+    return [self mapWithOptions:NSEnumerationReverse usingBlock:^id(id obj, NSUInteger idx) {
+        return obj;
+    }];
+}
+
+- (NSDictionary*)mapToDictionary:(id<NSCopying> (^)(id obj))block;
+{
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:[self count]];
+    
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        
+        id<NSCopying> key = block(obj);
+        if (key)
+            dict[key] = obj;
+    }];
+    
+    return dict;
 }
 
 @end

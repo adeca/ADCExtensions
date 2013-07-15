@@ -22,6 +22,12 @@
 - (NSArray *)map:(id (^)(id obj))block;
 
 /*!
+ Invokes block once for each element of self, returning a new array containing the
+ values returned by the block.
+ */
+- (NSArray *)mapIndexes:(id (^)(id obj, NSUInteger idx))block;
+
+/*!
  Invokes block once for each element of self, returning an array containing those
  elements for which the block returns a true value.
  */
@@ -58,6 +64,25 @@
 - (void)with:(NSArray*)array each:(void (^)(id obj1, id obj2))block;
 
 /*!
+ Calls the block once for each pair of elements, one from each array, returning a new
+ array containing the values returned by the block.
+ If one array has more elements than the other the method will ignore those extra elements.
+ */
+- (NSArray*)mapWith:(NSArray*)array each:(id (^)(id obj1, id obj2))block;
+
+/*!
+ Invokes block once for each element of self, returning a dictionary with these elements
+ as values and the results of the block invocations as keys.
+ */
+- (NSDictionary*)mapToDictionary:(id<NSCopying> (^)(id obj))block;
+
+/*!
+ Invokes block once for each element of self, returning a new array containing the
+ values returned by the block. The options parameter can be used to modify the enumeration behavior.
+ */
+- (NSArray *)mapWithOptions:(NSEnumerationOptions)options usingBlock:(id (^)(id obj, NSUInteger idx))block;
+
+/*!
  Returns a new array obtained by removing from the receiver all objects that are not in the given array.
  */
 - (NSArray *)intersect:(NSArray*)array;
@@ -79,8 +104,37 @@
 
 /*!
  Invokes block once for each element of self, returning a new array containing the
+ values returned by the block.
+ */
+- (NSMutableArray*)mapIndexes:(id (^)(id obj, NSUInteger idx))block;
+
+/*! 
+ Invokes block once for each element of self, returning an array containing those
  elements for which the block returns a true value.
  */
 - (NSMutableArray*)select:(BOOL (^)(id obj))block;
+
+/*!
+ Calls the block once for each pair of elements, one from each array, returning a new
+ array containing the values returned by the block.
+ If one array has more elements than the other the method will ignore those extra elements.
+ */
+- (NSMutableArray*)mapWith:(NSArray*)array each:(id (^)(id obj1, id obj2))block;
+
+/*!
+ Invokes block once for each element of self, returning a new array containing the
+ values returned by the block. The options parameter can be used to modify the enumeration behavior.
+ */
+- (NSMutableArray*)mapWithOptions:(NSEnumerationOptions)options usingBlock:(id (^)(id obj, NSUInteger idx))block;
+
+/*!
+ Returns a new array obtained by removing from the receiver all objects that are not in the given array.
+ */
+- (NSMutableArray*)intersect:(NSArray*)array;
+
+/*!
+ Returns a new array with the receiver's elements in reverse order.
+ */
+- (NSMutableArray*)reversed;
 
 @end
