@@ -26,6 +26,7 @@
 		7109E6FF16D3B070006151CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7109E6FD16D3B05B006151CA /* UIKit.framework */; };
 		710E392816D3B29800AA1F48 /* NSString+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 710E392616D3B29800AA1F48 /* NSString+ADC.h */; };
 		710E392916D3B29800AA1F48 /* NSString+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 710E392716D3B29800AA1F48 /* NSString+ADC.m */; };
+		717A41F8179587E900A3F2B9 /* NSSetSortingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 717A41F7179587E900A3F2B9 /* NSSetSortingTest.m */; };
 		7185AD5E17938A3100A12973 /* NSArray+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185AD5D17938A2B00A12973 /* NSArray+Functional.m */; };
 		7185AD6117938ACA00A12973 /* NSArray+Creation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7185AD5F17938ACA00A12973 /* NSArray+Creation.h */; };
 		7185AD6217938ACA00A12973 /* NSArray+Creation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185AD6017938ACA00A12973 /* NSArray+Creation.m */; };
@@ -66,6 +67,7 @@
 		71D9BABB1794F67500EC6593 /* NSArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BABA1794F67500EC6593 /* NSArrayTest.m */; };
 		71D9BABD1794FD6900EC6593 /* NSDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BABC1794FD6900EC6593 /* NSDictionaryTest.m */; };
 		71D9BABF179500A500EC6593 /* NSSetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BABE179500A500EC6593 /* NSSetTest.m */; };
+		71D9BAC11795861600EC6593 /* NSArraySortingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BAC01795861600EC6593 /* NSArraySortingTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,7 @@
 		7109E6FD16D3B05B006151CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		710E392616D3B29800AA1F48 /* NSString+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ADC.h"; sourceTree = "<group>"; };
 		710E392716D3B29800AA1F48 /* NSString+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ADC.m"; sourceTree = "<group>"; };
+		717A41F7179587E900A3F2B9 /* NSSetSortingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSetSortingTest.m; sourceTree = "<group>"; };
 		7185AD5C17938A2B00A12973 /* NSArray+Functional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Functional.h"; sourceTree = "<group>"; };
 		7185AD5D17938A2B00A12973 /* NSArray+Functional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Functional.m"; sourceTree = "<group>"; };
 		7185AD5F17938ACA00A12973 /* NSArray+Creation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Creation.h"; sourceTree = "<group>"; };
@@ -125,6 +128,7 @@
 		71D9BABA1794F67500EC6593 /* NSArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayTest.m; sourceTree = "<group>"; };
 		71D9BABC1794FD6900EC6593 /* NSDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryTest.m; sourceTree = "<group>"; };
 		71D9BABE179500A500EC6593 /* NSSetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSetTest.m; sourceTree = "<group>"; };
+		71D9BAC01795861600EC6593 /* NSArraySortingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArraySortingTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,8 +249,10 @@
 				71D9BAB61794F47A00EC6593 /* NSStringTest.m */,
 				71D9BAB81794F57100EC6593 /* NSObjectCastingTest.m */,
 				71D9BABA1794F67500EC6593 /* NSArrayTest.m */,
+				71D9BAC01795861600EC6593 /* NSArraySortingTest.m */,
 				71D9BABC1794FD6900EC6593 /* NSDictionaryTest.m */,
 				71D9BABE179500A500EC6593 /* NSSetTest.m */,
+				717A41F7179587E900A3F2B9 /* NSSetSortingTest.m */,
 			);
 			path = "ADCExtensions Tests";
 			sourceTree = "<group>";
@@ -401,6 +407,8 @@
 				71D9BAAC1794F39000EC6593 /* NSArray+ADC.m in Sources */,
 				71D9BAA51794F13200EC6593 /* NSNumberTest.m in Sources */,
 				71D9BAAD1794F39000EC6593 /* NSArray+Functional.m in Sources */,
+				717A41F8179587E900A3F2B9 /* NSSetSortingTest.m in Sources */,
+				71D9BAC11795861600EC6593 /* NSArraySortingTest.m in Sources */,
 				71D9BAAA1794F39000EC6593 /* NSString+ADC.m in Sources */,
 				71D9BAB41794F39000EC6593 /* NSSet+Sorting.m in Sources */,
 				71D9BAB21794F39000EC6593 /* NSSet+ADC.m in Sources */,
@@ -589,6 +597,7 @@
 				71D9BAA31794F0B600EC6593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
