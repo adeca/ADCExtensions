@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B72ECE52-5E32-4F9B-9997-CD5DACF2D004</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ADCExtensions</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>576C0377-3E2B-41DE-AB24-CD44C1D9554A</key>
+		<string>https://github.com/adeca/ADCExtensions.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ADCExtensions.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>576C0377-3E2B-41DE-AB24-CD44C1D9554A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/adeca/ADCExtensions.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>576C0377-3E2B-41DE-AB24-CD44C1D9554A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>576C0377-3E2B-41DE-AB24-CD44C1D9554A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ADCExtensions</string>
+		</dict>
+	</array>
+</dict>
+</plist>
