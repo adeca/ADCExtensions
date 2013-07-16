@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "71D9BA901794F0B600EC6593"
+               BuildableName = "ADCExtensions Tests.xctest"
+               BlueprintName = "ADCExtensions Tests"
+               ReferencedContainer = "container:ADCExtensions.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
