@@ -134,4 +134,23 @@
     return dict;
 }
 
+- (NSDictionary*)groupBy:(id<NSCopying> (^)(id obj))block
+{
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:[self count]];
+    
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        
+        id<NSCopying> key = block(obj);
+        if (key) {
+            NSMutableArray *array = dict[key];
+            if (array)
+                [array addObject:obj];
+            else
+                dict[key] = [NSMutableArray arrayWithObject:obj];
+        }
+    }];
+    
+    return dict;
+}
+
 @end

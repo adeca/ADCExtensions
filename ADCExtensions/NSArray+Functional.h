@@ -77,6 +77,12 @@
 - (NSDictionary*)mapToDictionary:(id<NSCopying> (^)(id obj))block;
 
 /*!
+ Invokes block once for each element of self, returning a dictionary with the elements grouped 
+ into arrays based on the results of the block invocation, using these as keys.
+ */
+- (NSDictionary*)groupBy:(id<NSCopying> (^)(id obj))block;
+
+/*!
  Invokes block once for each element of self, returning a new array containing the
  values returned by the block. The options parameter can be used to modify the enumeration behavior.
  */
