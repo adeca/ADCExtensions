@@ -39,6 +39,8 @@
 		7185AD7317939A4100A12973 /* NSArray+Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185AD7117939A4100A12973 /* NSArray+Sorting.m */; };
 		7185AD7617939E6500A12973 /* NSObject+Casting.h in Headers */ = {isa = PBXBuildFile; fileRef = 7185AD7417939E6500A12973 /* NSObject+Casting.h */; };
 		7185AD7717939E6500A12973 /* NSObject+Casting.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185AD7517939E6500A12973 /* NSObject+Casting.m */; };
+		71D9BA8B1794E2CB00EC6593 /* NSEnumerator+Functional.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D9BA891794E2CB00EC6593 /* NSEnumerator+Functional.h */; };
+		71D9BA8C1794E2CB00EC6593 /* NSEnumerator+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BA8A1794E2CB00EC6593 /* NSEnumerator+Functional.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,8 @@
 		7185AD7117939A4100A12973 /* NSArray+Sorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sorting.m"; sourceTree = "<group>"; };
 		7185AD7417939E6500A12973 /* NSObject+Casting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Casting.h"; sourceTree = "<group>"; };
 		7185AD7517939E6500A12973 /* NSObject+Casting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Casting.m"; sourceTree = "<group>"; };
+		71D9BA891794E2CB00EC6593 /* NSEnumerator+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+Functional.h"; sourceTree = "<group>"; };
+		71D9BA8A1794E2CB00EC6593 /* NSEnumerator+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEnumerator+Functional.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 				7185AD6917938BC400A12973 /* NSSet+Functional.m */,
 				7185AD6C179398B600A12973 /* NSSet+Sorting.h */,
 				7185AD6D179398B600A12973 /* NSSet+Sorting.m */,
+				71D9BA891794E2CB00EC6593 /* NSEnumerator+Functional.h */,
+				71D9BA8A1794E2CB00EC6593 /* NSEnumerator+Functional.m */,
 			);
 			name = Collections;
 			sourceTree = "<group>";
@@ -181,6 +187,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D9BA8B1794E2CB00EC6593 /* NSEnumerator+Functional.h in Headers */,
 				7185AD6E179398B600A12973 /* NSSet+Sorting.h in Headers */,
 				7109E6EB16D39644006151CA /* NSArray+ADC.h in Headers */,
 				7185AD7217939A4100A12973 /* NSArray+Sorting.h in Headers */,
@@ -255,6 +262,7 @@
 				7109E6E316D32A02006151CA /* NSObject+ADC.m in Sources */,
 				7109E6E616D32A3B006151CA /* NSDictionary+ADC.m in Sources */,
 				7109E6E916D32A5F006151CA /* NSSet+ADC.m in Sources */,
+				71D9BA8C1794E2CB00EC6593 /* NSEnumerator+Functional.m in Sources */,
 				7109E6F416D3AD00006151CA /* UIView+ADC.m in Sources */,
 				7185AD6F179398B600A12973 /* NSSet+Sorting.m in Sources */,
 				7185AD5E17938A3100A12973 /* NSArray+Functional.m in Sources */,
