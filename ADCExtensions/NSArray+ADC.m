@@ -73,7 +73,7 @@
 
 - (NSArray*)subarrayFromIndex:(NSUInteger)idx
 {
-    if (idx == NSNotFound || idx > self.count-1)
+    if (idx == NSNotFound || idx+1 > self.count)
         return @[];
     
     return [self subarrayWithRange:(NSRange){
