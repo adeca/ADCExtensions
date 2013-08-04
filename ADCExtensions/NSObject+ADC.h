@@ -25,7 +25,12 @@
  Invokes a block on the current thread using the default mode after a delay.
  To cancel all queued blocks, use the cancelPreviousPerformRequestsWithTarget: method.
  */
-- (void)performBlock:(void(^)())block afterDelay:(NSTimeInterval)delay;
+- (void)performBlock:(void(^)())block afterDelay:(NSTimeInterval)delay __attribute__((deprecated));
+/*!
+ Invokes a block on the current thread using the default mode after a delay.
+ To cancel all queued blocks, use the cancelPreviousPerformRequests method.
+ */
+- (void)performAfterDelay:(NSTimeInterval)delay block:(void(^)())block;
 
 /*!
  Cancels perform requests previously registered with the performSelector:withObject:afterDelay: method.

@@ -43,6 +43,10 @@
 {
     [self performSelector:@selector(performBlock:) withObject:block afterDelay:delay];
 }
+- (void)performAfterDelay:(NSTimeInterval)delay block:(void(^)())block
+{
+    [self performSelector:@selector(performBlock:) withObject:[block copy] afterDelay:delay];
+}
 
 - (void)cancelPreviousPerformRequestsWithSelector:(SEL)aSelector object:(id)anArgument
 {
