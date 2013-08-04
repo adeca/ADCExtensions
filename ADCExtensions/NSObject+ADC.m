@@ -10,6 +10,30 @@
 
 @implementation NSObject (ADC)
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+- (void)safelyPerformSelector:(SEL)selector
+{
+	if ([self respondsToSelector:selector]) {
+		[self performSelector:selector];
+	}
+}
+
+- (void)safelyPerformSelector:(SEL)selector withObject:(id)object
+{
+	if ([self respondsToSelector:selector]) {
+		[self performSelector:selector withObject:object];
+	}
+}
+
+- (void)safelyPerformSelector:(SEL)aSelector withObject:(id)object1 withObject:(id)object2
+{
+    if ([self respondsToSelector:aSelector]) {
+        [self performSelector:aSelector withObject:object1 withObject:object2];
+    }
+}
+#pragma clang diagnostic pop
+
 - (void)performBlock:(void(^)())block
 {
     if (block)

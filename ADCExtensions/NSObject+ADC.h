@@ -11,6 +11,13 @@
 @interface NSObject (ADC)
 
 /*!
+ Sends a specified message to the receiver only if the receiver can respond to this message.
+ */
+- (void)safelyPerformSelector:(SEL)aSelector;
+- (void)safelyPerformSelector:(SEL)aSelector withObject:(id)object;
+- (void)safelyPerformSelector:(SEL)aSelector withObject:(id)object1 withObject:(id)object2;
+
+/*!
  Invokes a block on the current thread.
  */
 - (void)performBlock:(void(^)())block;
