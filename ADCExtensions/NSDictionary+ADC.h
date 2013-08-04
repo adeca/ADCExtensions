@@ -24,6 +24,11 @@
  */
 - (NSDictionary *)dictionaryByRemovingNulls;
 
+/*!
+ Returns a copy of the receiver with all entries from the provided dictionary added.
+ */
+- (NSDictionary *)dictionaryByAddingEntriesFromDictionary:(NSDictionary*)dictionary;
+
 @end
 
 

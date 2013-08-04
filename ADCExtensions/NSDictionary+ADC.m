@@ -38,4 +38,11 @@
     }];
 }
 
+- (NSDictionary *)dictionaryByAddingEntriesFromDictionary:(NSDictionary*)dictionary
+{
+    NSMutableDictionary *copy = [self mutableCopy];
+    [copy addEntriesFromDictionary:dictionary];
+    return copy;
+}
+
 @end
