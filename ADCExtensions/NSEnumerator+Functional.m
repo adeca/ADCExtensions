@@ -104,4 +104,47 @@
     return NO;
 }
 
+- (id)reduce:(id)initial block:(id (^)(id accumulator, id obj))block
+{
+    id accumulator = initial;
+    for (id obj in self) {
+        accumulator = block(accumulator, obj);
+    }
+    return accumulator;
+}
+
+- (NSDictionary*)mapToDictionary:(id<NSCopying> (^)(id obj))block;
+{
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    
+    for (id obj in self) {
+        
+        id<NSCopying> key = block(obj);
+        if (key)
+            dict[key] = obj;
+    }
+    
+    return dict;
+}
+
+- (NSDictionary*)groupBy:(id<NSCopying> (^)(id obj))block
+{
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    
+    for (id obj in self) {
+        
+        id<NSCopying> key = block(obj);
+        if (!key)
+            continue;
+        
+        NSMutableArray *group = dict[key];
+        if (group)
+            [group addObject:obj];
+        else
+            dict[key] = [NSMutableArray arrayWithObject:obj];
+    }
+    
+    return dict;
+}
+
 @end

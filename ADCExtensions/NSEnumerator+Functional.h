@@ -42,4 +42,25 @@
  */
 - (BOOL)any:(BOOL (^)(id obj))block;
 
+/*!
+ Combines all objects of self by applying a binary operation, specified by a block.
+ For each object in self the block is passed an accumulator value (accum) and the object.
+ The result becomes the new value for 'accumulator'. At the end of the iteration, the final
+ value of 'accumulator' is the return value for the method. The initial value of 'accumulator'
+ will be the 'initial' parameter.
+ */
+- (id)reduce:(id)initial block:(id (^)(id accumulator, id obj))block;
+
+/*!
+ Invokes block once for each element of self, returning a dictionary with these elements
+ as values and the results of the block invocations as keys.
+ */
+- (NSDictionary*)mapToDictionary:(id<NSCopying> (^)(id obj))block;
+
+/*!
+ Invokes block once for each element of self, returning a dictionary with the elements grouped
+ into arrays based on the results of the block invocation, using these as keys.
+ */
+- (NSDictionary*)groupBy:(id<NSCopying> (^)(id obj))block;
+
 @end
