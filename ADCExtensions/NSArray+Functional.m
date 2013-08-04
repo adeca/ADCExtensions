@@ -124,31 +124,32 @@
 {
     NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:[self count]];
     
-    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    for (id obj in self) {
         
         id<NSCopying> key = block(obj);
         if (key)
             dict[key] = obj;
-    }];
+    }
     
     return dict;
 }
 
 - (NSDictionary*)groupBy:(id<NSCopying> (^)(id obj))block
 {
-    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:[self count]];
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary]; // #adc: consider using some initial capacity based on count.
     
-    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    for (id obj in self) {
         
         id<NSCopying> key = block(obj);
-        if (key) {
-            NSMutableArray *array = dict[key];
-            if (array)
-                [array addObject:obj];
-            else
-                dict[key] = [NSMutableArray arrayWithObject:obj];
-        }
-    }];
+        if (!key)
+            continue;
+        
+        NSMutableArray *group = dict[key];
+        if (group)
+            [group addObject:obj];
+        else
+            dict[key] = [NSMutableArray arrayWithObject:obj];
+    }
     
     return dict;
 }
