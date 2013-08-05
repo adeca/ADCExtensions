@@ -80,4 +80,18 @@
     XCTAssertEqualObjects([a dictionaryByRemovingNulls], b, @"");
 }
 
+- (void)testAddingEntries
+{
+    NSDictionary *a, *b, *c;
+    
+    a = @{}; b = @{ @"a":@1 }; c = b;
+    XCTAssertEqualObjects([a dictionaryByAddingEntriesFromDictionary:b], c, @"");
+    
+    a = @{ @"a":@1 }; b = @{ @"b":@2 }; c = @{ @"a":@1, @"b":@2 };
+    XCTAssertEqualObjects([a dictionaryByAddingEntriesFromDictionary:b], c, @"");
+    
+    a = @{ @"a":@1 }; b = @{ @"a":@2 }; c = @{ @"a":@2 };
+    XCTAssertEqualObjects([a dictionaryByAddingEntriesFromDictionary:b], c, @"");
+}
+
 @end
