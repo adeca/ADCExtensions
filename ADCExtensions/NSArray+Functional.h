@@ -83,6 +83,12 @@
 - (NSDictionary*)groupBy:(id<NSCopying> (^)(id obj))block;
 
 /*!
+ Invokes block once for each element of self, counts all objects that return the same value.
+ Returns a dictionary with the counts as values and the results of the block invocations as keys.
+ */
+- (NSDictionary*)countBy:(id<NSCopying> (^)(id obj))block;
+
+/*!
  Invokes block once for each element of self, returning a new array containing the
  values returned by the block. The options parameter can be used to modify the enumeration behavior.
  */

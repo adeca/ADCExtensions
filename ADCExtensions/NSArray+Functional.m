@@ -154,4 +154,20 @@
     return dict;
 }
 
+- (NSDictionary*)countBy:(id<NSCopying> (^)(id obj))block
+{
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary]; // #adc: consider using some initial capacity based on count.
+    
+    for (id obj in self) {
+        
+        id<NSCopying> key = block(obj);
+        if (!key)
+            continue;
+        
+        dict[key] = @([dict[key] intValue] + 1);
+    }
+    
+    return dict;
+}
+
 @end
