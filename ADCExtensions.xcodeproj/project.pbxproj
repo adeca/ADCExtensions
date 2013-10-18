@@ -41,6 +41,12 @@
 		7185AD7317939A4100A12973 /* NSArray+Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185AD7117939A4100A12973 /* NSArray+Sorting.m */; };
 		7185AD7617939E6500A12973 /* NSObject+Casting.h in Headers */ = {isa = PBXBuildFile; fileRef = 7185AD7417939E6500A12973 /* NSObject+Casting.h */; };
 		7185AD7717939E6500A12973 /* NSObject+Casting.m in Sources */ = {isa = PBXBuildFile; fileRef = 7185AD7517939E6500A12973 /* NSObject+Casting.m */; };
+		71CAF2391810FD3900116CA7 /* UITableView+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF2371810FD3900116CA7 /* UITableView+ADC.h */; };
+		71CAF23A1810FD3900116CA7 /* UITableView+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2381810FD3900116CA7 /* UITableView+ADC.m */; };
+		71CAF23B1810FD3900116CA7 /* UITableView+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2381810FD3900116CA7 /* UITableView+ADC.m */; };
+		71CAF23E1810FD7800116CA7 /* UITableViewCell+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF23C1810FD7800116CA7 /* UITableViewCell+ADC.h */; };
+		71CAF23F1810FD7800116CA7 /* UITableViewCell+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF23D1810FD7800116CA7 /* UITableViewCell+ADC.m */; };
+		71CAF2401810FD7800116CA7 /* UITableViewCell+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF23D1810FD7800116CA7 /* UITableViewCell+ADC.m */; };
 		71CAF2431810FDC500116CA7 /* UICollectionViewCell+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF2411810FDC500116CA7 /* UICollectionViewCell+ADC.h */; };
 		71CAF2441810FDC500116CA7 /* UICollectionViewCell+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2421810FDC500116CA7 /* UICollectionViewCell+ADC.m */; };
 		71CAF2451810FDC500116CA7 /* UICollectionViewCell+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2421810FDC500116CA7 /* UICollectionViewCell+ADC.m */; };
@@ -149,6 +155,10 @@
 		7185AD7117939A4100A12973 /* NSArray+Sorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sorting.m"; sourceTree = "<group>"; };
 		7185AD7417939E6500A12973 /* NSObject+Casting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Casting.h"; sourceTree = "<group>"; };
 		7185AD7517939E6500A12973 /* NSObject+Casting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Casting.m"; sourceTree = "<group>"; };
+		71CAF2371810FD3900116CA7 /* UITableView+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ADC.h"; sourceTree = "<group>"; };
+		71CAF2381810FD3900116CA7 /* UITableView+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ADC.m"; sourceTree = "<group>"; };
+		71CAF23C1810FD7800116CA7 /* UITableViewCell+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+ADC.h"; sourceTree = "<group>"; };
+		71CAF23D1810FD7800116CA7 /* UITableViewCell+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+ADC.m"; sourceTree = "<group>"; };
 		71CAF2411810FDC500116CA7 /* UICollectionViewCell+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+ADC.h"; sourceTree = "<group>"; };
 		71CAF2421810FDC500116CA7 /* UICollectionViewCell+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+ADC.m"; sourceTree = "<group>"; };
 		71CAF2461810FDFA00116CA7 /* UICollectionView+FlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+FlowLayout.h"; sourceTree = "<group>"; };
@@ -270,6 +280,10 @@
 				71CAF26F181102D800116CA7 /* UIImageView+ADC.m */,
 				71CAF2691811027200116CA7 /* UIImageView+Orientation.h */,
 				71CAF26A1811027200116CA7 /* UIImageView+Orientation.m */,
+				71CAF2371810FD3900116CA7 /* UITableView+ADC.h */,
+				71CAF2381810FD3900116CA7 /* UITableView+ADC.m */,
+				71CAF23C1810FD7800116CA7 /* UITableViewCell+ADC.h */,
+				71CAF23D1810FD7800116CA7 /* UITableViewCell+ADC.m */,
 				7109E6F116D3AD00006151CA /* UIView+ADC.h */,
 				7109E6F216D3AD00006151CA /* UIView+ADC.m */,
 				7185AD6717938B9E00A12973 /* Collections */,
@@ -358,6 +372,7 @@
 				7109E6ED16D3964C006151CA /* NSObject+ADC.h in Headers */,
 				7109E6EE16D3964C006151CA /* NSSet+ADC.h in Headers */,
 				7109E6F016D3AC76006151CA /* ADCExtensions.h in Headers */,
+				71CAF23E1810FD7800116CA7 /* UITableViewCell+ADC.h in Headers */,
 				71CAF26B1811027200116CA7 /* UIImageView+Orientation.h in Headers */,
 				7109E6F316D3AD00006151CA /* UIView+ADC.h in Headers */,
 				71CAF2521810FEE700116CA7 /* UIGestureRecognizer+ADC.h in Headers */,
@@ -369,6 +384,7 @@
 				71CAF2481810FDFA00116CA7 /* UICollectionView+FlowLayout.h in Headers */,
 				7185AD6A17938BC400A12973 /* NSSet+Functional.h in Headers */,
 				71CAF2431810FDC500116CA7 /* UICollectionViewCell+ADC.h in Headers */,
+				71CAF2391810FD3900116CA7 /* UITableView+ADC.h in Headers */,
 				71CAF24D1810FE7A00116CA7 /* UIColor+ADC.h in Headers */,
 				7185AD7617939E6500A12973 /* NSObject+Casting.h in Headers */,
 			);
@@ -461,6 +477,7 @@
 			files = (
 				71CAF25D1810FF6300116CA7 /* UIImage+Orientation.m in Sources */,
 				71CAF2531810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */,
+				71CAF23F1810FD7800116CA7 /* UITableViewCell+ADC.m in Sources */,
 				7185AD6B17938BC400A12973 /* NSSet+Functional.m in Sources */,
 				7109E6E016D329E8006151CA /* NSArray+ADC.m in Sources */,
 				71CAF2581810FF3400116CA7 /* UIImage+Tiling.m in Sources */,
@@ -481,6 +498,7 @@
 				7185AD7717939E6500A12973 /* NSObject+Casting.m in Sources */,
 				7185AD6217938ACA00A12973 /* NSArray+Creation.m in Sources */,
 				7109E6FC16D3B041006151CA /* NSNumber+ADC.m in Sources */,
+				71CAF23A1810FD3900116CA7 /* UITableView+ADC.m in Sources */,
 				710E392916D3B29800AA1F48 /* NSString+ADC.m in Sources */,
 				7185AD6617938B3F00A12973 /* NSDictionary+Functional.m in Sources */,
 				71CAF2621810FFCD00116CA7 /* UIImage+Cache.m in Sources */,
@@ -505,11 +523,13 @@
 				71CAF2631810FFCD00116CA7 /* UIImage+Cache.m in Sources */,
 				717A41F8179587E900A3F2B9 /* NSSetSortingTest.m in Sources */,
 				71CAF26D1811027200116CA7 /* UIImageView+Orientation.m in Sources */,
+				71CAF2401810FD7800116CA7 /* UITableViewCell+ADC.m in Sources */,
 				71CAF2541810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */,
 				71D9BAC11795861600EC6593 /* NSArraySortingTest.m in Sources */,
 				71D9BAAA1794F39000EC6593 /* NSString+ADC.m in Sources */,
 				71D9BAB41794F39000EC6593 /* NSSet+Sorting.m in Sources */,
 				71CAF2451810FDC500116CA7 /* UICollectionViewCell+ADC.m in Sources */,
+				71CAF23B1810FD3900116CA7 /* UITableView+ADC.m in Sources */,
 				71D9BAB21794F39000EC6593 /* NSSet+ADC.m in Sources */,
 				71D9BABF179500A500EC6593 /* NSSetTest.m in Sources */,
 				716759FC17AF3268002FB44F /* NSArrayFunctionalTest.m in Sources */,
