@@ -69,6 +69,50 @@
 -(CGFloat)frameMaxX     { return CGRectGetMaxX(self.frame); }
 -(CGFloat)frameMaxY     { return CGRectGetMaxY(self.frame); }
 
+-(CGFloat)boundsX        { return self.bounds.origin.x; }
+-(CGFloat)boundsY        { return self.bounds.origin.y; }
+-(CGFloat)boundsWidth    { return self.bounds.size.width; }
+-(CGFloat)boundsHeight   { return self.bounds.size.height; }
+-(CGSize)boundsSize      { return self.bounds.size; }
+-(CGPoint)boundsOrigin   { return self.bounds.origin; }
+
+-(void)setBoundsX:(CGFloat)x
+{
+    CGRect rect = self.bounds;
+    rect.origin.x = x;
+    self.bounds = rect;
+}
+-(void)setBoundsY:(CGFloat)y
+{
+    CGRect rect = self.bounds;
+    rect.origin.y = y;
+    self.bounds = rect;
+}
+-(void)setBoundsWidth:(CGFloat)width
+{
+    CGRect rect = self.bounds;
+    rect.size.width = width;
+    self.bounds = rect;
+}
+-(void)setBoundsHeight:(CGFloat)height
+{
+    CGRect rect = self.bounds;
+    rect.size.height = height;
+    self.bounds = rect;
+}
+-(void)setBoundsSize:(CGSize)size
+{
+    CGRect rect = self.bounds;
+    rect.size = size;
+    self.bounds = rect;
+}
+-(void)setBoundsOrigin:(CGPoint)origin
+{
+    CGRect rect = self.bounds;
+    rect.origin = origin;
+    self.bounds = rect;
+}
+
 #pragma mark -
 
 - (void)removeSubviews

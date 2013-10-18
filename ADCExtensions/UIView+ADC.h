@@ -30,6 +30,14 @@
 @property (nonatomic, readonly) CGFloat frameMaxX;  // CGRectGetMaxX(frame)
 @property (nonatomic, readonly) CGFloat frameMaxY;  // CGRectGetMaxY(frame)
 
+@property (nonatomic) CGFloat boundsX;       // bounds.origin.x
+@property (nonatomic) CGFloat boundsY;       // bounds.origin.y
+@property (nonatomic) CGFloat boundsWidth;   // bounds.size.width
+@property (nonatomic) CGFloat boundsHeight;  // bounds.size.height
+
+@property (nonatomic) CGSize boundsSize;     // bounds.size
+@property (nonatomic) CGPoint boundsOrigin;  // bounds.origin
+
 /*!
  Removes all of the receiver's current subviews.
  */
