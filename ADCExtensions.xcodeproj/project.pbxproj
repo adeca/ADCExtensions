@@ -65,6 +65,12 @@
 		71CAF2611810FFCD00116CA7 /* UIImage+Cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF25F1810FFCD00116CA7 /* UIImage+Cache.h */; };
 		71CAF2621810FFCD00116CA7 /* UIImage+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2601810FFCD00116CA7 /* UIImage+Cache.m */; };
 		71CAF2631810FFCD00116CA7 /* UIImage+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2601810FFCD00116CA7 /* UIImage+Cache.m */; };
+		71CAF26B1811027200116CA7 /* UIImageView+Orientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF2691811027200116CA7 /* UIImageView+Orientation.h */; };
+		71CAF26C1811027200116CA7 /* UIImageView+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF26A1811027200116CA7 /* UIImageView+Orientation.m */; };
+		71CAF26D1811027200116CA7 /* UIImageView+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF26A1811027200116CA7 /* UIImageView+Orientation.m */; };
+		71CAF270181102D800116CA7 /* UIImageView+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF26E181102D800116CA7 /* UIImageView+ADC.h */; };
+		71CAF271181102D800116CA7 /* UIImageView+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF26F181102D800116CA7 /* UIImageView+ADC.m */; };
+		71CAF272181102D800116CA7 /* UIImageView+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF26F181102D800116CA7 /* UIImageView+ADC.m */; };
 		71D9BA8B1794E2CB00EC6593 /* NSEnumerator+Functional.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D9BA891794E2CB00EC6593 /* NSEnumerator+Functional.h */; };
 		71D9BA8C1794E2CB00EC6593 /* NSEnumerator+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BA8A1794E2CB00EC6593 /* NSEnumerator+Functional.m */; };
 		71D9BA931794F0B600EC6593 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D9BA921794F0B600EC6593 /* XCTest.framework */; };
@@ -159,6 +165,10 @@
 		71CAF2601810FFCD00116CA7 /* UIImage+Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Cache.m"; sourceTree = "<group>"; };
 		71CAF2641811013300116CA7 /* CGGeometry+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+ADC.h"; sourceTree = "<group>"; };
 		71CAF2651811013300116CA7 /* CGGeometry+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+ADC.m"; sourceTree = "<group>"; };
+		71CAF2691811027200116CA7 /* UIImageView+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Orientation.h"; sourceTree = "<group>"; };
+		71CAF26A1811027200116CA7 /* UIImageView+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Orientation.m"; sourceTree = "<group>"; };
+		71CAF26E181102D800116CA7 /* UIImageView+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ADC.h"; sourceTree = "<group>"; };
+		71CAF26F181102D800116CA7 /* UIImageView+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ADC.m"; sourceTree = "<group>"; };
 		71D9BA891794E2CB00EC6593 /* NSEnumerator+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+Functional.h"; sourceTree = "<group>"; };
 		71D9BA8A1794E2CB00EC6593 /* NSEnumerator+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEnumerator+Functional.m"; sourceTree = "<group>"; };
 		71D9BA911794F0B600EC6593 /* ADCExtensions Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ADCExtensions Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +266,10 @@
 				71CAF25B1810FF6300116CA7 /* UIImage+Orientation.m */,
 				71CAF2551810FF3400116CA7 /* UIImage+Tiling.h */,
 				71CAF2561810FF3400116CA7 /* UIImage+Tiling.m */,
+				71CAF26E181102D800116CA7 /* UIImageView+ADC.h */,
+				71CAF26F181102D800116CA7 /* UIImageView+ADC.m */,
+				71CAF2691811027200116CA7 /* UIImageView+Orientation.h */,
+				71CAF26A1811027200116CA7 /* UIImageView+Orientation.m */,
 				7109E6F116D3AD00006151CA /* UIView+ADC.h */,
 				7109E6F216D3AD00006151CA /* UIView+ADC.m */,
 				7185AD6717938B9E00A12973 /* Collections */,
@@ -344,9 +358,11 @@
 				7109E6ED16D3964C006151CA /* NSObject+ADC.h in Headers */,
 				7109E6EE16D3964C006151CA /* NSSet+ADC.h in Headers */,
 				7109E6F016D3AC76006151CA /* ADCExtensions.h in Headers */,
+				71CAF26B1811027200116CA7 /* UIImageView+Orientation.h in Headers */,
 				7109E6F316D3AD00006151CA /* UIView+ADC.h in Headers */,
 				71CAF2521810FEE700116CA7 /* UIGestureRecognizer+ADC.h in Headers */,
 				7109E6F716D3AF73006151CA /* math+ADC.h in Headers */,
+				71CAF270181102D800116CA7 /* UIImageView+ADC.h in Headers */,
 				7109E6FB16D3B041006151CA /* NSNumber+ADC.h in Headers */,
 				710E392816D3B29800AA1F48 /* NSString+ADC.h in Headers */,
 				7185AD6517938B3F00A12973 /* NSDictionary+Functional.h in Headers */,
@@ -453,9 +469,11 @@
 				7109E6E916D32A5F006151CA /* NSSet+ADC.m in Sources */,
 				71D9BA8C1794E2CB00EC6593 /* NSEnumerator+Functional.m in Sources */,
 				7109E6F416D3AD00006151CA /* UIView+ADC.m in Sources */,
+				71CAF26C1811027200116CA7 /* UIImageView+Orientation.m in Sources */,
 				7185AD6F179398B600A12973 /* NSSet+Sorting.m in Sources */,
 				71CAF2441810FDC500116CA7 /* UICollectionViewCell+ADC.m in Sources */,
 				71CAF2491810FDFA00116CA7 /* UICollectionView+FlowLayout.m in Sources */,
+				71CAF271181102D800116CA7 /* UIImageView+ADC.m in Sources */,
 				7185AD5E17938A3100A12973 /* NSArray+Functional.m in Sources */,
 				7109E6F816D3AF73006151CA /* math+ADC.m in Sources */,
 				71CAF2671811013300116CA7 /* CGGeometry+ADC.m in Sources */,
@@ -474,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71CAF272181102D800116CA7 /* UIImageView+ADC.m in Sources */,
 				71D9BAA81794F39000EC6593 /* NSObject+ADC.m in Sources */,
 				71CAF2681811013300116CA7 /* CGGeometry+ADC.m in Sources */,
 				71D9BAB71794F47A00EC6593 /* NSStringTest.m in Sources */,
@@ -485,6 +504,7 @@
 				71D9BAAD1794F39000EC6593 /* NSArray+Functional.m in Sources */,
 				71CAF2631810FFCD00116CA7 /* UIImage+Cache.m in Sources */,
 				717A41F8179587E900A3F2B9 /* NSSetSortingTest.m in Sources */,
+				71CAF26D1811027200116CA7 /* UIImageView+Orientation.m in Sources */,
 				71CAF2541810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */,
 				71D9BAC11795861600EC6593 /* NSArraySortingTest.m in Sources */,
 				71D9BAAA1794F39000EC6593 /* NSString+ADC.m in Sources */,
