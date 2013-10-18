@@ -12,6 +12,9 @@
 
 - (NSString*)stringByTrimmingWhitespaceCharacters;
 
+- (BOOL)hasSubstring:(NSString*)substring;
+- (BOOL)hasSubstring:(NSString*)substring options:(NSStringCompareOptions)mask;
+
 + (NSString*)stringWithUUID;
 
 @end

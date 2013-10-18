@@ -15,6 +15,15 @@
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
+- (BOOL)hasSubstring:(NSString*)substring
+{
+    return [self hasSubstring:substring options:0];
+}
+- (BOOL)hasSubstring:(NSString*)substring options:(NSStringCompareOptions)mask
+{
+    return [self rangeOfString:substring options:mask].location != NSNotFound;
+}
+
 + (NSString*)stringWithUUID
 {
     CFUUIDRef uuidObj = CFUUIDCreate(nil);//create a new UUID
