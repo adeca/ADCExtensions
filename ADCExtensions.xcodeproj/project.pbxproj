@@ -47,6 +47,9 @@
 		71CAF2481810FDFA00116CA7 /* UICollectionView+FlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF2461810FDFA00116CA7 /* UICollectionView+FlowLayout.h */; };
 		71CAF2491810FDFA00116CA7 /* UICollectionView+FlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2471810FDFA00116CA7 /* UICollectionView+FlowLayout.m */; };
 		71CAF24A1810FDFA00116CA7 /* UICollectionView+FlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2471810FDFA00116CA7 /* UICollectionView+FlowLayout.m */; };
+		71CAF24D1810FE7A00116CA7 /* UIColor+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF24B1810FE7A00116CA7 /* UIColor+ADC.h */; };
+		71CAF24E1810FE7A00116CA7 /* UIColor+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF24C1810FE7A00116CA7 /* UIColor+ADC.m */; };
+		71CAF24F1810FE7A00116CA7 /* UIColor+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF24C1810FE7A00116CA7 /* UIColor+ADC.m */; };
 		71D9BA8B1794E2CB00EC6593 /* NSEnumerator+Functional.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D9BA891794E2CB00EC6593 /* NSEnumerator+Functional.h */; };
 		71D9BA8C1794E2CB00EC6593 /* NSEnumerator+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BA8A1794E2CB00EC6593 /* NSEnumerator+Functional.m */; };
 		71D9BA931794F0B600EC6593 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D9BA921794F0B600EC6593 /* XCTest.framework */; };
@@ -129,6 +132,8 @@
 		71CAF2421810FDC500116CA7 /* UICollectionViewCell+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+ADC.m"; sourceTree = "<group>"; };
 		71CAF2461810FDFA00116CA7 /* UICollectionView+FlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+FlowLayout.h"; sourceTree = "<group>"; };
 		71CAF2471810FDFA00116CA7 /* UICollectionView+FlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+FlowLayout.m"; sourceTree = "<group>"; };
+		71CAF24B1810FE7A00116CA7 /* UIColor+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ADC.h"; sourceTree = "<group>"; };
+		71CAF24C1810FE7A00116CA7 /* UIColor+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ADC.m"; sourceTree = "<group>"; };
 		71D9BA891794E2CB00EC6593 /* NSEnumerator+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+Functional.h"; sourceTree = "<group>"; };
 		71D9BA8A1794E2CB00EC6593 /* NSEnumerator+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEnumerator+Functional.m"; sourceTree = "<group>"; };
 		71D9BA911794F0B600EC6593 /* ADCExtensions Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ADCExtensions Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +219,8 @@
 				71CAF2471810FDFA00116CA7 /* UICollectionView+FlowLayout.m */,
 				71CAF2411810FDC500116CA7 /* UICollectionViewCell+ADC.h */,
 				71CAF2421810FDC500116CA7 /* UICollectionViewCell+ADC.m */,
+				71CAF24B1810FE7A00116CA7 /* UIColor+ADC.h */,
+				71CAF24C1810FE7A00116CA7 /* UIColor+ADC.m */,
 				7109E6F116D3AD00006151CA /* UIView+ADC.h */,
 				7109E6F216D3AD00006151CA /* UIView+ADC.m */,
 				7185AD6717938B9E00A12973 /* Collections */,
@@ -306,6 +313,7 @@
 				71CAF2481810FDFA00116CA7 /* UICollectionView+FlowLayout.h in Headers */,
 				7185AD6A17938BC400A12973 /* NSSet+Functional.h in Headers */,
 				71CAF2431810FDC500116CA7 /* UICollectionViewCell+ADC.h in Headers */,
+				71CAF24D1810FE7A00116CA7 /* UIColor+ADC.h in Headers */,
 				7185AD7617939E6500A12973 /* NSObject+Casting.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +415,7 @@
 				71CAF2491810FDFA00116CA7 /* UICollectionView+FlowLayout.m in Sources */,
 				7185AD5E17938A3100A12973 /* NSArray+Functional.m in Sources */,
 				7109E6F816D3AF73006151CA /* math+ADC.m in Sources */,
+				71CAF24E1810FE7A00116CA7 /* UIColor+ADC.m in Sources */,
 				7185AD7717939E6500A12973 /* NSObject+Casting.m in Sources */,
 				7185AD6217938ACA00A12973 /* NSArray+Creation.m in Sources */,
 				7109E6FC16D3B041006151CA /* NSNumber+ADC.m in Sources */,
@@ -440,6 +449,7 @@
 				71D9BAB31794F39000EC6593 /* NSSet+Functional.m in Sources */,
 				71D9BAAB1794F39000EC6593 /* UIView+ADC.m in Sources */,
 				71D9BAB11794F39000EC6593 /* NSDictionary+Functional.m in Sources */,
+				71CAF24F1810FE7A00116CA7 /* UIColor+ADC.m in Sources */,
 				71D9BAB91794F57100EC6593 /* NSObjectCastingTest.m in Sources */,
 				71D9BAA91794F39000EC6593 /* NSObject+Casting.m in Sources */,
 				71CAF24A1810FDFA00116CA7 /* UICollectionView+FlowLayout.m in Sources */,
