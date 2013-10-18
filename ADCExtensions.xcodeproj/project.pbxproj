@@ -56,6 +56,15 @@
 		71CAF2521810FEE700116CA7 /* UIGestureRecognizer+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF2501810FEE700116CA7 /* UIGestureRecognizer+ADC.h */; };
 		71CAF2531810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2511810FEE700116CA7 /* UIGestureRecognizer+ADC.m */; };
 		71CAF2541810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2511810FEE700116CA7 /* UIGestureRecognizer+ADC.m */; };
+		71CAF2571810FF3400116CA7 /* UIImage+Tiling.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF2551810FF3400116CA7 /* UIImage+Tiling.h */; };
+		71CAF2581810FF3400116CA7 /* UIImage+Tiling.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2561810FF3400116CA7 /* UIImage+Tiling.m */; };
+		71CAF2591810FF3400116CA7 /* UIImage+Tiling.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2561810FF3400116CA7 /* UIImage+Tiling.m */; };
+		71CAF25C1810FF6300116CA7 /* UIImage+Orientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF25A1810FF6300116CA7 /* UIImage+Orientation.h */; };
+		71CAF25D1810FF6300116CA7 /* UIImage+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF25B1810FF6300116CA7 /* UIImage+Orientation.m */; };
+		71CAF25E1810FF6300116CA7 /* UIImage+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF25B1810FF6300116CA7 /* UIImage+Orientation.m */; };
+		71CAF2611810FFCD00116CA7 /* UIImage+Cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF25F1810FFCD00116CA7 /* UIImage+Cache.h */; };
+		71CAF2621810FFCD00116CA7 /* UIImage+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2601810FFCD00116CA7 /* UIImage+Cache.m */; };
+		71CAF2631810FFCD00116CA7 /* UIImage+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2601810FFCD00116CA7 /* UIImage+Cache.m */; };
 		71D9BA8B1794E2CB00EC6593 /* NSEnumerator+Functional.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D9BA891794E2CB00EC6593 /* NSEnumerator+Functional.h */; };
 		71D9BA8C1794E2CB00EC6593 /* NSEnumerator+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BA8A1794E2CB00EC6593 /* NSEnumerator+Functional.m */; };
 		71D9BA931794F0B600EC6593 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D9BA921794F0B600EC6593 /* XCTest.framework */; };
@@ -142,6 +151,12 @@
 		71CAF24C1810FE7A00116CA7 /* UIColor+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ADC.m"; sourceTree = "<group>"; };
 		71CAF2501810FEE700116CA7 /* UIGestureRecognizer+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+ADC.h"; sourceTree = "<group>"; };
 		71CAF2511810FEE700116CA7 /* UIGestureRecognizer+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+ADC.m"; sourceTree = "<group>"; };
+		71CAF2551810FF3400116CA7 /* UIImage+Tiling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tiling.h"; sourceTree = "<group>"; };
+		71CAF2561810FF3400116CA7 /* UIImage+Tiling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tiling.m"; sourceTree = "<group>"; };
+		71CAF25A1810FF6300116CA7 /* UIImage+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Orientation.h"; sourceTree = "<group>"; };
+		71CAF25B1810FF6300116CA7 /* UIImage+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Orientation.m"; sourceTree = "<group>"; };
+		71CAF25F1810FFCD00116CA7 /* UIImage+Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Cache.h"; sourceTree = "<group>"; };
+		71CAF2601810FFCD00116CA7 /* UIImage+Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Cache.m"; sourceTree = "<group>"; };
 		71CAF2641811013300116CA7 /* CGGeometry+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+ADC.h"; sourceTree = "<group>"; };
 		71CAF2651811013300116CA7 /* CGGeometry+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+ADC.m"; sourceTree = "<group>"; };
 		71D9BA891794E2CB00EC6593 /* NSEnumerator+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+Functional.h"; sourceTree = "<group>"; };
@@ -235,6 +250,12 @@
 				71CAF24C1810FE7A00116CA7 /* UIColor+ADC.m */,
 				71CAF2501810FEE700116CA7 /* UIGestureRecognizer+ADC.h */,
 				71CAF2511810FEE700116CA7 /* UIGestureRecognizer+ADC.m */,
+				71CAF25F1810FFCD00116CA7 /* UIImage+Cache.h */,
+				71CAF2601810FFCD00116CA7 /* UIImage+Cache.m */,
+				71CAF25A1810FF6300116CA7 /* UIImage+Orientation.h */,
+				71CAF25B1810FF6300116CA7 /* UIImage+Orientation.m */,
+				71CAF2551810FF3400116CA7 /* UIImage+Tiling.h */,
+				71CAF2561810FF3400116CA7 /* UIImage+Tiling.m */,
 				7109E6F116D3AD00006151CA /* UIView+ADC.h */,
 				7109E6F216D3AD00006151CA /* UIView+ADC.m */,
 				7185AD6717938B9E00A12973 /* Collections */,
@@ -310,8 +331,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71CAF2571810FF3400116CA7 /* UIImage+Tiling.h in Headers */,
 				71D9BA8B1794E2CB00EC6593 /* NSEnumerator+Functional.h in Headers */,
 				7185AD6E179398B600A12973 /* NSSet+Sorting.h in Headers */,
+				71CAF2611810FFCD00116CA7 /* UIImage+Cache.h in Headers */,
+				71CAF25C1810FF6300116CA7 /* UIImage+Orientation.h in Headers */,
 				7109E6EB16D39644006151CA /* NSArray+ADC.h in Headers */,
 				7185AD7217939A4100A12973 /* NSArray+Sorting.h in Headers */,
 				7109E6EC16D3964C006151CA /* NSDictionary+ADC.h in Headers */,
@@ -419,9 +443,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71CAF25D1810FF6300116CA7 /* UIImage+Orientation.m in Sources */,
 				71CAF2531810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */,
 				7185AD6B17938BC400A12973 /* NSSet+Functional.m in Sources */,
 				7109E6E016D329E8006151CA /* NSArray+ADC.m in Sources */,
+				71CAF2581810FF3400116CA7 /* UIImage+Tiling.m in Sources */,
 				7109E6E316D32A02006151CA /* NSObject+ADC.m in Sources */,
 				7109E6E616D32A3B006151CA /* NSDictionary+ADC.m in Sources */,
 				7109E6E916D32A5F006151CA /* NSSet+ADC.m in Sources */,
@@ -439,6 +465,7 @@
 				7109E6FC16D3B041006151CA /* NSNumber+ADC.m in Sources */,
 				710E392916D3B29800AA1F48 /* NSString+ADC.m in Sources */,
 				7185AD6617938B3F00A12973 /* NSDictionary+Functional.m in Sources */,
+				71CAF2621810FFCD00116CA7 /* UIImage+Cache.m in Sources */,
 				7185AD7317939A4100A12973 /* NSArray+Sorting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +483,7 @@
 				71D9BAAC1794F39000EC6593 /* NSArray+ADC.m in Sources */,
 				71D9BAA51794F13200EC6593 /* NSNumberTest.m in Sources */,
 				71D9BAAD1794F39000EC6593 /* NSArray+Functional.m in Sources */,
+				71CAF2631810FFCD00116CA7 /* UIImage+Cache.m in Sources */,
 				717A41F8179587E900A3F2B9 /* NSSetSortingTest.m in Sources */,
 				71CAF2541810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */,
 				71D9BAC11795861600EC6593 /* NSArraySortingTest.m in Sources */,
@@ -473,9 +501,11 @@
 				71D9BAB91794F57100EC6593 /* NSObjectCastingTest.m in Sources */,
 				71D9BAA91794F39000EC6593 /* NSObject+Casting.m in Sources */,
 				71CAF24A1810FDFA00116CA7 /* UICollectionView+FlowLayout.m in Sources */,
+				71CAF25E1810FF6300116CA7 /* UIImage+Orientation.m in Sources */,
 				71D9BABB1794F67500EC6593 /* NSArrayTest.m in Sources */,
 				71D9BAB51794F39000EC6593 /* NSEnumerator+Functional.m in Sources */,
 				71D9BAAF1794F39000EC6593 /* NSArray+Creation.m in Sources */,
+				71CAF2591810FF3400116CA7 /* UIImage+Tiling.m in Sources */,
 				71D9BAB01794F39000EC6593 /* NSDictionary+ADC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
