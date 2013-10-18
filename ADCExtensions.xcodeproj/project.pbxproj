@@ -53,6 +53,9 @@
 		71CAF2661811013300116CA7 /* CGGeometry+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF2641811013300116CA7 /* CGGeometry+ADC.h */; };
 		71CAF2671811013300116CA7 /* CGGeometry+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2651811013300116CA7 /* CGGeometry+ADC.m */; };
 		71CAF2681811013300116CA7 /* CGGeometry+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2651811013300116CA7 /* CGGeometry+ADC.m */; };
+		71CAF2521810FEE700116CA7 /* UIGestureRecognizer+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF2501810FEE700116CA7 /* UIGestureRecognizer+ADC.h */; };
+		71CAF2531810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2511810FEE700116CA7 /* UIGestureRecognizer+ADC.m */; };
+		71CAF2541810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2511810FEE700116CA7 /* UIGestureRecognizer+ADC.m */; };
 		71D9BA8B1794E2CB00EC6593 /* NSEnumerator+Functional.h in Headers */ = {isa = PBXBuildFile; fileRef = 71D9BA891794E2CB00EC6593 /* NSEnumerator+Functional.h */; };
 		71D9BA8C1794E2CB00EC6593 /* NSEnumerator+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BA8A1794E2CB00EC6593 /* NSEnumerator+Functional.m */; };
 		71D9BA931794F0B600EC6593 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D9BA921794F0B600EC6593 /* XCTest.framework */; };
@@ -137,6 +140,8 @@
 		71CAF2471810FDFA00116CA7 /* UICollectionView+FlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+FlowLayout.m"; sourceTree = "<group>"; };
 		71CAF24B1810FE7A00116CA7 /* UIColor+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ADC.h"; sourceTree = "<group>"; };
 		71CAF24C1810FE7A00116CA7 /* UIColor+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ADC.m"; sourceTree = "<group>"; };
+		71CAF2501810FEE700116CA7 /* UIGestureRecognizer+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+ADC.h"; sourceTree = "<group>"; };
+		71CAF2511810FEE700116CA7 /* UIGestureRecognizer+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+ADC.m"; sourceTree = "<group>"; };
 		71CAF2641811013300116CA7 /* CGGeometry+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+ADC.h"; sourceTree = "<group>"; };
 		71CAF2651811013300116CA7 /* CGGeometry+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+ADC.m"; sourceTree = "<group>"; };
 		71D9BA891794E2CB00EC6593 /* NSEnumerator+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+Functional.h"; sourceTree = "<group>"; };
@@ -228,6 +233,8 @@
 				71CAF2421810FDC500116CA7 /* UICollectionViewCell+ADC.m */,
 				71CAF24B1810FE7A00116CA7 /* UIColor+ADC.h */,
 				71CAF24C1810FE7A00116CA7 /* UIColor+ADC.m */,
+				71CAF2501810FEE700116CA7 /* UIGestureRecognizer+ADC.h */,
+				71CAF2511810FEE700116CA7 /* UIGestureRecognizer+ADC.m */,
 				7109E6F116D3AD00006151CA /* UIView+ADC.h */,
 				7109E6F216D3AD00006151CA /* UIView+ADC.m */,
 				7185AD6717938B9E00A12973 /* Collections */,
@@ -314,6 +321,7 @@
 				7109E6EE16D3964C006151CA /* NSSet+ADC.h in Headers */,
 				7109E6F016D3AC76006151CA /* ADCExtensions.h in Headers */,
 				7109E6F316D3AD00006151CA /* UIView+ADC.h in Headers */,
+				71CAF2521810FEE700116CA7 /* UIGestureRecognizer+ADC.h in Headers */,
 				7109E6F716D3AF73006151CA /* math+ADC.h in Headers */,
 				7109E6FB16D3B041006151CA /* NSNumber+ADC.h in Headers */,
 				710E392816D3B29800AA1F48 /* NSString+ADC.h in Headers */,
@@ -411,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71CAF2531810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */,
 				7185AD6B17938BC400A12973 /* NSSet+Functional.m in Sources */,
 				7109E6E016D329E8006151CA /* NSArray+ADC.m in Sources */,
 				7109E6E316D32A02006151CA /* NSObject+ADC.m in Sources */,
@@ -448,6 +457,7 @@
 				71D9BAA51794F13200EC6593 /* NSNumberTest.m in Sources */,
 				71D9BAAD1794F39000EC6593 /* NSArray+Functional.m in Sources */,
 				717A41F8179587E900A3F2B9 /* NSSetSortingTest.m in Sources */,
+				71CAF2541810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */,
 				71D9BAC11795861600EC6593 /* NSArraySortingTest.m in Sources */,
 				71D9BAAA1794F39000EC6593 /* NSString+ADC.m in Sources */,
 				71D9BAB41794F39000EC6593 /* NSSet+Sorting.m in Sources */,
