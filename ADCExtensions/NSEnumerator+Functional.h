@@ -42,6 +42,11 @@
  */
 - (BOOL)any:(BOOL (^)(id obj))block;
 
+/**
+ Return an enumerator that will iterate over the first 'count' elements of the receiver
+ */
+- (NSEnumerator*)take:(NSUInteger)count;
+
 /*!
  Combines all objects of self by applying a binary operation, specified by a block.
  For each object in self the block is passed an accumulator value (accum) and the object.

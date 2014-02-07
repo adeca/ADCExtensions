@@ -51,6 +51,48 @@
 
 @end
 
+@interface _RangeEnumerator : NSEnumerator
+
+- (id)initWithEnumerator:(NSEnumerator*)enumerator range:(NSRange)range;
+
+@property (nonatomic, strong) NSEnumerator *sourceEnumerator;
+@property (nonatomic, assign) NSRange range;
+@property (nonatomic, assign) NSUInteger location;
+
+@end
+
+@implementation _RangeEnumerator
+
+- (id)initWithEnumerator:(NSEnumerator *)enumerator range:(NSRange)range
+{
+  if (self = [super init]) {
+    self.sourceEnumerator = enumerator;
+    self.range = range;
+  }
+  return self;
+}
+- (id)init
+{
+  return [self initWithEnumerator:nil range:NSMakeRange(0, 0)];
+}
+
+- (id)nextObject
+{
+  if (self.location >= NSMaxRange(self.range))
+    return nil;
+  
+  while (self.location < self.range.location)
+  {
+    self.location++;
+    [self.sourceEnumerator nextObject];
+  }
+  
+  self.location++;
+  return [self.sourceEnumerator nextObject];
+}
+
+@end
+
 @implementation NSEnumerator (Functional)
 
 - (void)each:(void (^)(id obj))block
@@ -102,6 +144,11 @@
         }
     }
     return NO;
+}
+
+- (NSEnumerator*)take:(NSUInteger)count
+{
+  return [[_RangeEnumerator alloc] initWithEnumerator:self range:NSMakeRange(0, count)];
 }
 
 - (id)reduce:(id)initial block:(id (^)(id accumulator, id obj))block
