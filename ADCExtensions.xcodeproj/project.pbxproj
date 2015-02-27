@@ -56,9 +56,6 @@
 		71CAF24D1810FE7A00116CA7 /* UIColor+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF24B1810FE7A00116CA7 /* UIColor+ADC.h */; };
 		71CAF24E1810FE7A00116CA7 /* UIColor+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF24C1810FE7A00116CA7 /* UIColor+ADC.m */; };
 		71CAF24F1810FE7A00116CA7 /* UIColor+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF24C1810FE7A00116CA7 /* UIColor+ADC.m */; };
-		71CAF2661811013300116CA7 /* CGGeometry+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF2641811013300116CA7 /* CGGeometry+ADC.h */; };
-		71CAF2671811013300116CA7 /* CGGeometry+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2651811013300116CA7 /* CGGeometry+ADC.m */; };
-		71CAF2681811013300116CA7 /* CGGeometry+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2651811013300116CA7 /* CGGeometry+ADC.m */; };
 		71CAF2521810FEE700116CA7 /* UIGestureRecognizer+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF2501810FEE700116CA7 /* UIGestureRecognizer+ADC.h */; };
 		71CAF2531810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2511810FEE700116CA7 /* UIGestureRecognizer+ADC.m */; };
 		71CAF2541810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2511810FEE700116CA7 /* UIGestureRecognizer+ADC.m */; };
@@ -71,6 +68,9 @@
 		71CAF2611810FFCD00116CA7 /* UIImage+Cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF25F1810FFCD00116CA7 /* UIImage+Cache.h */; };
 		71CAF2621810FFCD00116CA7 /* UIImage+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2601810FFCD00116CA7 /* UIImage+Cache.m */; };
 		71CAF2631810FFCD00116CA7 /* UIImage+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2601810FFCD00116CA7 /* UIImage+Cache.m */; };
+		71CAF2661811013300116CA7 /* CGGeometry+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF2641811013300116CA7 /* CGGeometry+ADC.h */; };
+		71CAF2671811013300116CA7 /* CGGeometry+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2651811013300116CA7 /* CGGeometry+ADC.m */; };
+		71CAF2681811013300116CA7 /* CGGeometry+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF2651811013300116CA7 /* CGGeometry+ADC.m */; };
 		71CAF26B1811027200116CA7 /* UIImageView+Orientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CAF2691811027200116CA7 /* UIImageView+Orientation.h */; };
 		71CAF26C1811027200116CA7 /* UIImageView+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF26A1811027200116CA7 /* UIImageView+Orientation.m */; };
 		71CAF26D1811027200116CA7 /* UIImageView+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF26A1811027200116CA7 /* UIImageView+Orientation.m */; };
@@ -254,39 +254,8 @@
 				71CAF2651811013300116CA7 /* CGGeometry+ADC.m */,
 				7109E6F516D3AF73006151CA /* math+ADC.h */,
 				7109E6F616D3AF73006151CA /* math+ADC.m */,
-				7109E6F916D3B041006151CA /* NSNumber+ADC.h */,
-				7109E6FA16D3B041006151CA /* NSNumber+ADC.m */,
-				7109E6E116D32A02006151CA /* NSObject+ADC.h */,
-				7109E6E216D32A02006151CA /* NSObject+ADC.m */,
-				7185AD7417939E6500A12973 /* NSObject+Casting.h */,
-				7185AD7517939E6500A12973 /* NSObject+Casting.m */,
-				710E392616D3B29800AA1F48 /* NSString+ADC.h */,
-				710E392716D3B29800AA1F48 /* NSString+ADC.m */,
-				71CAF2461810FDFA00116CA7 /* UICollectionView+FlowLayout.h */,
-				71CAF2471810FDFA00116CA7 /* UICollectionView+FlowLayout.m */,
-				71CAF2411810FDC500116CA7 /* UICollectionViewCell+ADC.h */,
-				71CAF2421810FDC500116CA7 /* UICollectionViewCell+ADC.m */,
-				71CAF24B1810FE7A00116CA7 /* UIColor+ADC.h */,
-				71CAF24C1810FE7A00116CA7 /* UIColor+ADC.m */,
-				71CAF2501810FEE700116CA7 /* UIGestureRecognizer+ADC.h */,
-				71CAF2511810FEE700116CA7 /* UIGestureRecognizer+ADC.m */,
-				71CAF25F1810FFCD00116CA7 /* UIImage+Cache.h */,
-				71CAF2601810FFCD00116CA7 /* UIImage+Cache.m */,
-				71CAF25A1810FF6300116CA7 /* UIImage+Orientation.h */,
-				71CAF25B1810FF6300116CA7 /* UIImage+Orientation.m */,
-				71CAF2551810FF3400116CA7 /* UIImage+Tiling.h */,
-				71CAF2561810FF3400116CA7 /* UIImage+Tiling.m */,
-				71CAF26E181102D800116CA7 /* UIImageView+ADC.h */,
-				71CAF26F181102D800116CA7 /* UIImageView+ADC.m */,
-				71CAF2691811027200116CA7 /* UIImageView+Orientation.h */,
-				71CAF26A1811027200116CA7 /* UIImageView+Orientation.m */,
-				71CAF2371810FD3900116CA7 /* UITableView+ADC.h */,
-				71CAF2381810FD3900116CA7 /* UITableView+ADC.m */,
-				71CAF23C1810FD7800116CA7 /* UITableViewCell+ADC.h */,
-				71CAF23D1810FD7800116CA7 /* UITableViewCell+ADC.m */,
-				7109E6F116D3AD00006151CA /* UIView+ADC.h */,
-				7109E6F216D3AD00006151CA /* UIView+ADC.m */,
-				7185AD6717938B9E00A12973 /* Collections */,
+				E38E8D561AA0DCC400F41E2A /* Foundation */,
+				E38E8D551AA0DCB900F41E2A /* UIKit */,
 			);
 			path = ADCExtensions;
 			sourceTree = "<group>";
@@ -350,6 +319,53 @@
 				71D9BA9E1794F0B600EC6593 /* ADCExtensions Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E38E8D551AA0DCB900F41E2A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				71CAF2461810FDFA00116CA7 /* UICollectionView+FlowLayout.h */,
+				71CAF2471810FDFA00116CA7 /* UICollectionView+FlowLayout.m */,
+				71CAF2411810FDC500116CA7 /* UICollectionViewCell+ADC.h */,
+				71CAF2421810FDC500116CA7 /* UICollectionViewCell+ADC.m */,
+				71CAF24B1810FE7A00116CA7 /* UIColor+ADC.h */,
+				71CAF24C1810FE7A00116CA7 /* UIColor+ADC.m */,
+				71CAF2501810FEE700116CA7 /* UIGestureRecognizer+ADC.h */,
+				71CAF2511810FEE700116CA7 /* UIGestureRecognizer+ADC.m */,
+				71CAF25F1810FFCD00116CA7 /* UIImage+Cache.h */,
+				71CAF2601810FFCD00116CA7 /* UIImage+Cache.m */,
+				71CAF25A1810FF6300116CA7 /* UIImage+Orientation.h */,
+				71CAF25B1810FF6300116CA7 /* UIImage+Orientation.m */,
+				71CAF2551810FF3400116CA7 /* UIImage+Tiling.h */,
+				71CAF2561810FF3400116CA7 /* UIImage+Tiling.m */,
+				71CAF26E181102D800116CA7 /* UIImageView+ADC.h */,
+				71CAF26F181102D800116CA7 /* UIImageView+ADC.m */,
+				71CAF2691811027200116CA7 /* UIImageView+Orientation.h */,
+				71CAF26A1811027200116CA7 /* UIImageView+Orientation.m */,
+				71CAF2371810FD3900116CA7 /* UITableView+ADC.h */,
+				71CAF2381810FD3900116CA7 /* UITableView+ADC.m */,
+				71CAF23C1810FD7800116CA7 /* UITableViewCell+ADC.h */,
+				71CAF23D1810FD7800116CA7 /* UITableViewCell+ADC.m */,
+				7109E6F116D3AD00006151CA /* UIView+ADC.h */,
+				7109E6F216D3AD00006151CA /* UIView+ADC.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		E38E8D561AA0DCC400F41E2A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				7185AD6717938B9E00A12973 /* Collections */,
+				7109E6F916D3B041006151CA /* NSNumber+ADC.h */,
+				7109E6FA16D3B041006151CA /* NSNumber+ADC.m */,
+				7109E6E116D32A02006151CA /* NSObject+ADC.h */,
+				7109E6E216D32A02006151CA /* NSObject+ADC.m */,
+				7185AD7417939E6500A12973 /* NSObject+Casting.h */,
+				7185AD7517939E6500A12973 /* NSObject+Casting.m */,
+				710E392616D3B29800AA1F48 /* NSString+ADC.h */,
+				710E392716D3B29800AA1F48 /* NSString+ADC.m */,
+			);
+			name = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
