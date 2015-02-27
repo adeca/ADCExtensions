@@ -105,6 +105,9 @@
 		71D9BABD1794FD6900EC6593 /* NSDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BABC1794FD6900EC6593 /* NSDictionaryTest.m */; };
 		71D9BABF179500A500EC6593 /* NSSetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BABE179500A500EC6593 /* NSSetTest.m */; };
 		71D9BAC11795861600EC6593 /* NSArraySortingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BAC01795861600EC6593 /* NSArraySortingTest.m */; };
+		E38E8D591AA0DD2900F41E2A /* UIView+Loading.h in Headers */ = {isa = PBXBuildFile; fileRef = E38E8D571AA0DD2900F41E2A /* UIView+Loading.h */; };
+		E38E8D6B1AA0E73400F41E2A /* UIView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D581AA0DD2900F41E2A /* UIView+Loading.m */; };
+		E38E8D6C1AA0E73400F41E2A /* UIView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D581AA0DD2900F41E2A /* UIView+Loading.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +194,8 @@
 		71D9BABC1794FD6900EC6593 /* NSDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryTest.m; sourceTree = "<group>"; };
 		71D9BABE179500A500EC6593 /* NSSetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSetTest.m; sourceTree = "<group>"; };
 		71D9BAC01795861600EC6593 /* NSArraySortingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArraySortingTest.m; sourceTree = "<group>"; };
+		E38E8D571AA0DD2900F41E2A /* UIView+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Loading.h"; sourceTree = "<group>"; };
+		E38E8D581AA0DD2900F41E2A /* UIView+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Loading.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +353,8 @@
 				71CAF23D1810FD7800116CA7 /* UITableViewCell+ADC.m */,
 				7109E6F116D3AD00006151CA /* UIView+ADC.h */,
 				7109E6F216D3AD00006151CA /* UIView+ADC.m */,
+				E38E8D571AA0DD2900F41E2A /* UIView+Loading.h */,
+				E38E8D581AA0DD2900F41E2A /* UIView+Loading.m */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -375,6 +382,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E38E8D591AA0DD2900F41E2A /* UIView+Loading.h in Headers */,
 				71CAF2571810FF3400116CA7 /* UIImage+Tiling.h in Headers */,
 				71D9BA8B1794E2CB00EC6593 /* NSEnumerator+Functional.h in Headers */,
 				7185AD6E179398B600A12973 /* NSSet+Sorting.h in Headers */,
@@ -505,6 +513,7 @@
 				71CAF26C1811027200116CA7 /* UIImageView+Orientation.m in Sources */,
 				7185AD6F179398B600A12973 /* NSSet+Sorting.m in Sources */,
 				71CAF2441810FDC500116CA7 /* UICollectionViewCell+ADC.m in Sources */,
+				E38E8D5A1AA0DD2900F41E2A /* UIView+Loading.m in Sources */,
 				71CAF2491810FDFA00116CA7 /* UICollectionView+FlowLayout.m in Sources */,
 				71CAF271181102D800116CA7 /* UIImageView+ADC.m in Sources */,
 				7185AD5E17938A3100A12973 /* NSArray+Functional.m in Sources */,
@@ -531,6 +540,7 @@
 				71CAF2681811013300116CA7 /* CGGeometry+ADC.m in Sources */,
 				71D9BAB71794F47A00EC6593 /* NSStringTest.m in Sources */,
 				71D9BAAE1794F39000EC6593 /* NSArray+Sorting.m in Sources */,
+				E38E8D6A1AA0E14700F41E2A /* UIView+Loading.m in Sources */,
 				71D9BAA61794F37A00EC6593 /* NSNumber+ADC.m in Sources */,
 				71D9BAA71794F39000EC6593 /* math+ADC.m in Sources */,
 				71D9BAAC1794F39000EC6593 /* NSArray+ADC.m in Sources */,
