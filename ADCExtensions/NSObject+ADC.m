@@ -57,4 +57,20 @@
     [[self class] cancelPreviousPerformRequestsWithTarget:self];
 }
 
+- (void)performInBackground:(void(^)())block
+{
+    if (!block)
+        return;
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block);
+}
+
+- (void)performInMainThread:(void(^)())block
+{
+    if (!block)
+        return;
+    
+    dispatch_async(dispatch_get_main_queue(), block);
+}
+
 @end

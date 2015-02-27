@@ -38,5 +38,15 @@
 - (void)cancelPreviousPerformRequestsWithSelector:(SEL)aSelector object:(id)anArgument;
 - (void)cancelPreviousPerformRequests;
 
+/*!
+ Invokes a block asynchronously on a background queue with default priority
+ */
+- (void)performInBackground:(void(^)())block;
+
+/*!
+ Invokes a block asynchronously on the main queue
+ */
+- (void)performInMainThread:(void(^)())block;
+
 @end
 
