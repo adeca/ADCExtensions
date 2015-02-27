@@ -108,6 +108,9 @@
 		E38E8D591AA0DD2900F41E2A /* UIView+Loading.h in Headers */ = {isa = PBXBuildFile; fileRef = E38E8D571AA0DD2900F41E2A /* UIView+Loading.h */; };
 		E38E8D5D1AA0DDB400F41E2A /* UIView+Constraints.h in Headers */ = {isa = PBXBuildFile; fileRef = E38E8D5B1AA0DDB400F41E2A /* UIView+Constraints.h */; };
 		E38E8D5E1AA0DDB400F41E2A /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D5C1AA0DDB400F41E2A /* UIView+Constraints.m */; };
+		E38E8D611AA0DEAD00F41E2A /* UIViewController+Loading.h in Headers */ = {isa = PBXBuildFile; fileRef = E38E8D5F1AA0DEAD00F41E2A /* UIViewController+Loading.h */; };
+		E38E8D621AA0DEAD00F41E2A /* UIViewController+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D601AA0DEAD00F41E2A /* UIViewController+Loading.m */; };
+		E38E8D681AA0E14300F41E2A /* UIViewController+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D601AA0DEAD00F41E2A /* UIViewController+Loading.m */; };
 		E38E8D691AA0E14500F41E2A /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D5C1AA0DDB400F41E2A /* UIView+Constraints.m */; };
 		E38E8D6B1AA0E73400F41E2A /* UIView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D581AA0DD2900F41E2A /* UIView+Loading.m */; };
 		E38E8D6C1AA0E73400F41E2A /* UIView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D581AA0DD2900F41E2A /* UIView+Loading.m */; };
@@ -201,6 +204,8 @@
 		E38E8D581AA0DD2900F41E2A /* UIView+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Loading.m"; sourceTree = "<group>"; };
 		E38E8D5B1AA0DDB400F41E2A /* UIView+Constraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraints.h"; sourceTree = "<group>"; };
 		E38E8D5C1AA0DDB400F41E2A /* UIView+Constraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraints.m"; sourceTree = "<group>"; };
+		E38E8D5F1AA0DEAD00F41E2A /* UIViewController+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Loading.h"; sourceTree = "<group>"; };
+		E38E8D601AA0DEAD00F41E2A /* UIViewController+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Loading.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +367,8 @@
 				E38E8D581AA0DD2900F41E2A /* UIView+Loading.m */,
 				E38E8D5B1AA0DDB400F41E2A /* UIView+Constraints.h */,
 				E38E8D5C1AA0DDB400F41E2A /* UIView+Constraints.m */,
+				E38E8D5F1AA0DEAD00F41E2A /* UIViewController+Loading.h */,
+				E38E8D601AA0DEAD00F41E2A /* UIViewController+Loading.m */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -389,6 +396,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E38E8D611AA0DEAD00F41E2A /* UIViewController+Loading.h in Headers */,
 				E38E8D591AA0DD2900F41E2A /* UIView+Loading.h in Headers */,
 				71CAF2571810FF3400116CA7 /* UIImage+Tiling.h in Headers */,
 				71D9BA8B1794E2CB00EC6593 /* NSEnumerator+Functional.h in Headers */,
@@ -523,6 +531,7 @@
 				7185AD6F179398B600A12973 /* NSSet+Sorting.m in Sources */,
 				71CAF2441810FDC500116CA7 /* UICollectionViewCell+ADC.m in Sources */,
 				E38E8D5A1AA0DD2900F41E2A /* UIView+Loading.m in Sources */,
+				E38E8D621AA0DEAD00F41E2A /* UIViewController+Loading.m in Sources */,
 				71CAF2491810FDFA00116CA7 /* UICollectionView+FlowLayout.m in Sources */,
 				71CAF271181102D800116CA7 /* UIImageView+ADC.m in Sources */,
 				7185AD5E17938A3100A12973 /* NSArray+Functional.m in Sources */,
@@ -568,6 +577,7 @@
 				71CAF23B1810FD3900116CA7 /* UITableView+ADC.m in Sources */,
 				71D9BAB21794F39000EC6593 /* NSSet+ADC.m in Sources */,
 				71D9BABF179500A500EC6593 /* NSSetTest.m in Sources */,
+				E38E8D681AA0E14300F41E2A /* UIViewController+Loading.m in Sources */,
 				716759FC17AF3268002FB44F /* NSArrayFunctionalTest.m in Sources */,
 				71D9BABD1794FD6900EC6593 /* NSDictionaryTest.m in Sources */,
 				71D9BAB31794F39000EC6593 /* NSSet+Functional.m in Sources */,
