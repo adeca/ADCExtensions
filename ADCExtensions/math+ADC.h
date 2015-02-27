@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Agustín de Cabrera. All rights reserved.
 //
 
-#ifndef _OUI_MATH_ONEPLUSUI_H_
-#define _OUI_MATH_ONEPLUSUI_H_
+#ifndef _ADC_MATH_H_
+#define _ADC_MATH_H_
 
 #import <math.h>
 
