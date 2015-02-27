@@ -110,6 +110,9 @@
 		E38E8D5E1AA0DDB400F41E2A /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D5C1AA0DDB400F41E2A /* UIView+Constraints.m */; };
 		E38E8D611AA0DEAD00F41E2A /* UIViewController+Loading.h in Headers */ = {isa = PBXBuildFile; fileRef = E38E8D5F1AA0DEAD00F41E2A /* UIViewController+Loading.h */; };
 		E38E8D621AA0DEAD00F41E2A /* UIViewController+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D601AA0DEAD00F41E2A /* UIViewController+Loading.m */; };
+		E38E8D651AA0DF8200F41E2A /* NSThread+ADC.h in Headers */ = {isa = PBXBuildFile; fileRef = E38E8D631AA0DF8200F41E2A /* NSThread+ADC.h */; };
+		E38E8D661AA0DF8200F41E2A /* NSThread+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D641AA0DF8200F41E2A /* NSThread+ADC.m */; };
+		E38E8D671AA0E13100F41E2A /* NSThread+ADC.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D641AA0DF8200F41E2A /* NSThread+ADC.m */; };
 		E38E8D681AA0E14300F41E2A /* UIViewController+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D601AA0DEAD00F41E2A /* UIViewController+Loading.m */; };
 		E38E8D691AA0E14500F41E2A /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D5C1AA0DDB400F41E2A /* UIView+Constraints.m */; };
 		E38E8D6B1AA0E73400F41E2A /* UIView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D581AA0DD2900F41E2A /* UIView+Loading.m */; };
@@ -206,6 +209,8 @@
 		E38E8D5C1AA0DDB400F41E2A /* UIView+Constraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraints.m"; sourceTree = "<group>"; };
 		E38E8D5F1AA0DEAD00F41E2A /* UIViewController+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Loading.h"; sourceTree = "<group>"; };
 		E38E8D601AA0DEAD00F41E2A /* UIViewController+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Loading.m"; sourceTree = "<group>"; };
+		E38E8D631AA0DF8200F41E2A /* NSThread+ADC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+ADC.h"; sourceTree = "<group>"; };
+		E38E8D641AA0DF8200F41E2A /* NSThread+ADC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+ADC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +390,8 @@
 				7185AD7517939E6500A12973 /* NSObject+Casting.m */,
 				710E392616D3B29800AA1F48 /* NSString+ADC.h */,
 				710E392716D3B29800AA1F48 /* NSString+ADC.m */,
+				E38E8D631AA0DF8200F41E2A /* NSThread+ADC.h */,
+				E38E8D641AA0DF8200F41E2A /* NSThread+ADC.m */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -412,6 +419,7 @@
 				7109E6ED16D3964C006151CA /* NSObject+ADC.h in Headers */,
 				7109E6EE16D3964C006151CA /* NSSet+ADC.h in Headers */,
 				7109E6F016D3AC76006151CA /* ADCExtensions.h in Headers */,
+				E38E8D651AA0DF8200F41E2A /* NSThread+ADC.h in Headers */,
 				71CAF23E1810FD7800116CA7 /* UITableViewCell+ADC.h in Headers */,
 				71CAF26B1811027200116CA7 /* UIImageView+Orientation.h in Headers */,
 				7109E6F316D3AD00006151CA /* UIView+ADC.h in Headers */,
@@ -536,6 +544,7 @@
 				71CAF271181102D800116CA7 /* UIImageView+ADC.m in Sources */,
 				7185AD5E17938A3100A12973 /* NSArray+Functional.m in Sources */,
 				7109E6F816D3AF73006151CA /* math+ADC.m in Sources */,
+				E38E8D661AA0DF8200F41E2A /* NSThread+ADC.m in Sources */,
 				71CAF2671811013300116CA7 /* CGGeometry+ADC.m in Sources */,
 				71CAF24E1810FE7A00116CA7 /* UIColor+ADC.m in Sources */,
 				7185AD7717939E6500A12973 /* NSObject+Casting.m in Sources */,
@@ -562,6 +571,7 @@
 				E38E8D6A1AA0E14700F41E2A /* UIView+Loading.m in Sources */,
 				71D9BAA61794F37A00EC6593 /* NSNumber+ADC.m in Sources */,
 				71D9BAA71794F39000EC6593 /* math+ADC.m in Sources */,
+				E38E8D671AA0E13100F41E2A /* NSThread+ADC.m in Sources */,
 				71D9BAAC1794F39000EC6593 /* NSArray+ADC.m in Sources */,
 				71D9BAA51794F13200EC6593 /* NSNumberTest.m in Sources */,
 				71D9BAAD1794F39000EC6593 /* NSArray+Functional.m in Sources */,
