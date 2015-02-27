@@ -106,6 +106,9 @@
 		71D9BABF179500A500EC6593 /* NSSetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BABE179500A500EC6593 /* NSSetTest.m */; };
 		71D9BAC11795861600EC6593 /* NSArraySortingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D9BAC01795861600EC6593 /* NSArraySortingTest.m */; };
 		E38E8D591AA0DD2900F41E2A /* UIView+Loading.h in Headers */ = {isa = PBXBuildFile; fileRef = E38E8D571AA0DD2900F41E2A /* UIView+Loading.h */; };
+		E38E8D5D1AA0DDB400F41E2A /* UIView+Constraints.h in Headers */ = {isa = PBXBuildFile; fileRef = E38E8D5B1AA0DDB400F41E2A /* UIView+Constraints.h */; };
+		E38E8D5E1AA0DDB400F41E2A /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D5C1AA0DDB400F41E2A /* UIView+Constraints.m */; };
+		E38E8D691AA0E14500F41E2A /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D5C1AA0DDB400F41E2A /* UIView+Constraints.m */; };
 		E38E8D6B1AA0E73400F41E2A /* UIView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D581AA0DD2900F41E2A /* UIView+Loading.m */; };
 		E38E8D6C1AA0E73400F41E2A /* UIView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = E38E8D581AA0DD2900F41E2A /* UIView+Loading.m */; };
 /* End PBXBuildFile section */
@@ -196,6 +199,8 @@
 		71D9BAC01795861600EC6593 /* NSArraySortingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArraySortingTest.m; sourceTree = "<group>"; };
 		E38E8D571AA0DD2900F41E2A /* UIView+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Loading.h"; sourceTree = "<group>"; };
 		E38E8D581AA0DD2900F41E2A /* UIView+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Loading.m"; sourceTree = "<group>"; };
+		E38E8D5B1AA0DDB400F41E2A /* UIView+Constraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraints.h"; sourceTree = "<group>"; };
+		E38E8D5C1AA0DDB400F41E2A /* UIView+Constraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraints.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,6 +360,8 @@
 				7109E6F216D3AD00006151CA /* UIView+ADC.m */,
 				E38E8D571AA0DD2900F41E2A /* UIView+Loading.h */,
 				E38E8D581AA0DD2900F41E2A /* UIView+Loading.m */,
+				E38E8D5B1AA0DDB400F41E2A /* UIView+Constraints.h */,
+				E38E8D5C1AA0DDB400F41E2A /* UIView+Constraints.m */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -390,6 +397,7 @@
 				71CAF25C1810FF6300116CA7 /* UIImage+Orientation.h in Headers */,
 				7109E6EB16D39644006151CA /* NSArray+ADC.h in Headers */,
 				7185AD7217939A4100A12973 /* NSArray+Sorting.h in Headers */,
+				E38E8D5D1AA0DDB400F41E2A /* UIView+Constraints.h in Headers */,
 				7109E6EC16D3964C006151CA /* NSDictionary+ADC.h in Headers */,
 				7185AD6117938ACA00A12973 /* NSArray+Creation.h in Headers */,
 				71CAF2661811013300116CA7 /* CGGeometry+ADC.h in Headers */,
@@ -502,6 +510,7 @@
 				71CAF25D1810FF6300116CA7 /* UIImage+Orientation.m in Sources */,
 				71CAF2531810FEE700116CA7 /* UIGestureRecognizer+ADC.m in Sources */,
 				71CAF23F1810FD7800116CA7 /* UITableViewCell+ADC.m in Sources */,
+				E38E8D5E1AA0DDB400F41E2A /* UIView+Constraints.m in Sources */,
 				7185AD6B17938BC400A12973 /* NSSet+Functional.m in Sources */,
 				7109E6E016D329E8006151CA /* NSArray+ADC.m in Sources */,
 				71CAF2581810FF3400116CA7 /* UIImage+Tiling.m in Sources */,
@@ -538,6 +547,7 @@
 				71CAF272181102D800116CA7 /* UIImageView+ADC.m in Sources */,
 				71D9BAA81794F39000EC6593 /* NSObject+ADC.m in Sources */,
 				71CAF2681811013300116CA7 /* CGGeometry+ADC.m in Sources */,
+				E38E8D691AA0E14500F41E2A /* UIView+Constraints.m in Sources */,
 				71D9BAB71794F47A00EC6593 /* NSStringTest.m in Sources */,
 				71D9BAAE1794F39000EC6593 /* NSArray+Sorting.m in Sources */,
 				E38E8D6A1AA0E14700F41E2A /* UIView+Loading.m in Sources */,
