@@ -26,6 +26,11 @@
 - (NSArray*)arrayByRemovingObject:(id)object;
 
 /*!
+ Returns a new array that is a copy of the receiving array with the object at the given index removed.
+ */
+- (NSArray*)arrayByRemovingObjectAtIndex:(NSUInteger)index;
+
+/*!
  Returns a new array that is a copy of the receiving array with the given object removed.
  */
 - (NSArray*)arrayByRemovingObjectsInArray:(NSArray*)otherArray;
@@ -34,6 +39,11 @@
  Returns a new array that is a copy of the receiving array with the given object inserted.
  */
 - (NSArray*)arrayByInsertingObject:(id)object atIndex:(NSUInteger)index;
+
+/*!
+ Returns a copy of the receiving array with all copies of the provided object removed from either end.
+ */
+- (NSArray *)arrayByTrimmingObject:(id)object fromStart:(BOOL)fromStart fromEnd:(BOOL)fromEnd;
 
 /*! 
  Returns a new array containing the receiving array’s elements up to a specified count.

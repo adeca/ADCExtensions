@@ -100,6 +100,11 @@
 - (NSArray *)intersect:(NSArray*)array;
 
 /*!
+ Returns a new array obtained by removing from the receiver all objects that are in the given array.
+ */
+- (NSArray *)minus:(NSArray*)array;
+
+/*!
  Returns a new array with the receiver's elements in reverse order.
  */
 - (NSArray *)reversed;

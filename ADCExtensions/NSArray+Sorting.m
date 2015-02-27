@@ -16,4 +16,10 @@
             @[[NSSortDescriptor sortDescriptorWithKey:key ascending:ascending]]];
 }
 
+- (NSArray *)sortedArrayUsingKey:(NSString*)key ascending:(BOOL)ascending selector:(SEL)selector
+{
+    return [self sortedArrayUsingDescriptors:
+            @[[NSSortDescriptor sortDescriptorWithKey:key ascending:ascending selector:selector]]];
+}
+
 @end

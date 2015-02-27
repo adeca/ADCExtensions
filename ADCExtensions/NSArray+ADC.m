@@ -45,6 +45,13 @@
     return [NSArray arrayWithArray:copy];
 }
 
+- (NSArray*)arrayByRemovingObjectAtIndex:(NSUInteger)index
+{
+    NSMutableArray *copy = [self mutableCopy];
+    [copy removeObjectAtIndex:index];
+    return [NSArray arrayWithArray:copy];
+}
+
 - (NSArray*)arrayByRemovingObjectsInArray:(NSArray*)otherArray
 {
     NSMutableArray *copy = [self mutableCopy];
@@ -57,6 +64,37 @@
     NSMutableArray *copy = [self mutableCopy];
     [copy insertObject:object atIndex:index];
     return [NSArray arrayWithArray:copy];
+}
+
+- (NSArray *)arrayByTrimmingObject:(id)object fromStart:(BOOL)fromStart fromEnd:(BOOL)fromEnd
+{
+    // the block is used to find an object that is not the one being trimmed
+    id testBlock = ^BOOL(id currentObject, NSUInteger idx, BOOL *stop) {
+        return ![currentObject isEqual:object];
+    };
+    
+    NSArray *result = self;
+    // find the first object that is not the one being trimmed
+    // and create a new array starting from that object
+    if (fromStart) {
+        NSUInteger firstIdx = [result indexOfObjectWithOptions:0 passingTest:testBlock];
+        if (firstIdx == NSNotFound)
+            return @[];
+        else if (firstIdx > 0)
+            result = [result subarrayFromIndex:firstIdx];
+    }
+    
+    // starting from the end of the array, find the first object that is not the one being trimmed
+    // and create a new array up until that object
+    if (fromEnd) {
+        NSUInteger lastIdx = [result indexOfObjectWithOptions:NSEnumerationReverse passingTest:testBlock];
+        if (lastIdx == NSNotFound)
+            return @[];
+        else if (lastIdx < result.count-1)
+            result = [result subarrayToIndex:lastIdx];
+    }
+    
+    return result;
 }
 
 - (NSArray*)subarrayWithCount:(NSUInteger)count

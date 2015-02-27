@@ -113,6 +113,13 @@
     }];
 }
 
+- (NSArray *)minus:(NSArray*)array
+{
+    return [self select:^BOOL(id obj) {
+        return ![array containsObject:obj];
+    }];
+}
+
 - (NSArray *)reversed
 {
     return [self mapWithOptions:NSEnumerationReverse usingBlock:^id(id obj, NSUInteger idx) {
