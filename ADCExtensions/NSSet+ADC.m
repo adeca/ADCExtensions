@@ -30,4 +30,26 @@
     }];
 }
 
+- (NSSet*)setByRemovingObject:(id)object
+{
+    NSMutableSet *copy = [self mutableCopy];
+    [copy removeObject:object];
+    return [NSSet setWithSet:copy];
+}
+
+- (NSSet *)setByRemovingObjectsInSet:(NSSet *)other
+{
+    NSMutableSet *copy = [self mutableCopy];
+    [copy minusSet:other];
+    return [NSSet setWithSet:copy];
+}
+
+- (NSSet *)setByRemovingObjectsInArray:(NSArray *)other
+{
+    NSMutableSet *copy = [self mutableCopy];
+    [copy minusSet:[NSSet setWithArray:other]];
+    return [NSSet setWithSet:copy];
+}
+
+
 @end
