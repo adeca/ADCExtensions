@@ -52,6 +52,6 @@
 
 #import "UIViewController+Loading.h"
 
-#define sizeof_array(A) ( sizeof(A)/sizeof(A[0]); )
+#define sizeof_array(A) ( sizeof(A)/sizeof(A[0]) )
 
 
